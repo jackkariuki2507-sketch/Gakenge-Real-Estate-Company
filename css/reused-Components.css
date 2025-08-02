@@ -1,9 +1,16 @@
+/*Grid Container*/
 .grid_container{
   display:grid;
   gap:16px;
   padding:8px;
 }
 
+/* Two Column Grid */
+.two_grid_column_container{
+  grid-template-columns: repeat(2,1fr);
+}
+
+/*Cards*/
 .card{
   border:1px solid #ccc;
   border-radius:8px;
@@ -11,14 +18,12 @@
   padding:8px;
 }
 
-.two_grid_column_container{
-  grid-template-columns: repeat(2,1fr);
-}
-
+/* Section Heading */
 .section_heading h2{
   text-align:center;
 }
 
+/*Flex Container*/
 .flex-container{
   display:flex;
   flex-direction:row;
