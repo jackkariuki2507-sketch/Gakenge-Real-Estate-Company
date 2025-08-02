@@ -41,6 +41,24 @@
   padding:8px;
 }
 
+.section_heading h1{
+  font-size:32px;
+}
+
+.section_heading h2{
+  font-size:24px;
+}
+
+/*Flex Container*/
+.flex-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:8px;
+}
+
 /*Forms*/
 .form{
   width:100%;
@@ -55,4 +73,34 @@
 
 .form .form-control{
   margin-bottom:8px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"]{
+  width:100%;
+  padding:4px 8px;
+  height:40px;
+  outline:none;
+  border-radius:5px;
+  border-color:#ccc;
+}
+
+/* Buttons */
+.button{
+  display:inline-block;
+  padding:8px;
+  font-size:18px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.button-primary{
+  background-color:#72AD21;
+  color:#fff;
+}
+
+.button-secondary{
+  background-color:rgb(224, 65, 65);
+  color:#111;
 }
