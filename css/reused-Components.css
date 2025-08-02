@@ -15,8 +15,17 @@
   grid-template-columns: repeat(2,1fr);
 }
 
+.section_heading{
+  text-align:center;
+}
+
+.section_heading h1{
+  font-size:32px;
+}
+
 .section_heading h2{
   text-align:center;
+  font-size:24px;
 }
 
 /*Forms*/
@@ -29,4 +38,34 @@
   display:block;
   margin-bottom:4px;
   font-weight:600;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"]{
+  width:100%;
+  padding:4px 8px;
+  height:40px;
+  outline:none;
+  border-radius:5px;
+  border-color:#ccc;
+}
+
+/* Buttons */
+.button{
+  display:inline-block;
+  padding:8px;
+  font-size:18px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.button-primary{
+  background-color:#72AD21;
+  color:#fff;
+}
+
+.button-secondary{
+  background-color:rgb(224, 65, 65);
+  color:#111;
 }
