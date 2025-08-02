@@ -9,13 +9,14 @@
 body{
   font-size:1rem;
   /* padding-top:72px; */
-  padding:72px 16px 0;
+  padding:72px 0 0;
   color:#333;
 }
 
 a{
   text-decoration:none;
   cursor:pointer;
+  color:#fff;
 }
 
 ul{
@@ -36,3 +37,31 @@ h2{
   font-size:24px;
 }
 
+/*Navigation Bar*/
+.js-navigation-container{
+  background-color:#333;
+  color:#fff;
+  padding:8px 16px;
+  height:70px;
+  /* width:100%; */
+}
+
+.js-navBar-createAcc-Container{
+  display:none;
+}
+
+.js-navBar-Toggle{
+  display:block;
+}
+
+/*Hero*/
+.js-hero-section{
+  padding:24px 16px;
+}
+
+/* Main  */
+.js-main{
+  /* padding-right:16px;
+  padding-left:16px; */
+  padding:24px 16px;
+}
