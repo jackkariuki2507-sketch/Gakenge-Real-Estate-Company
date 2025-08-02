@@ -93,6 +93,8 @@
   font-size:18px;
   text-align:center;
   cursor:pointer;
+  border:none;
+  outline:none;
 }
 
 .button-primary{
@@ -103,4 +105,8 @@
 .button-secondary{
   background-color:rgb(224, 65, 65);
   color:#111;
+}
+
+.button-large{
+  width:100%;
 }
