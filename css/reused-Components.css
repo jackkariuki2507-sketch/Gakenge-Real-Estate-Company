@@ -19,8 +19,16 @@
 }
 
 /* Section Heading */
-.section_heading h2{
+.section_heading{
   text-align:center;
+}
+
+.section_heading h1{
+  font-size:32px;
+}
+
+.section_heading h2{
+  font-size:24px;
 }
 
 /*Flex Container*/
