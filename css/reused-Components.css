@@ -32,3 +32,19 @@
   gap:16px;
   padding:8px;
 }
+
+/*Forms*/
+.form{
+  width:100%;
+  padding:8px 0;
+}
+
+.form label{
+  display:block;
+  /* margin-bottom:2px; */
+  font-weight:600;
+}
+
+.form .form-control{
+  margin-bottom:8px;
+}
