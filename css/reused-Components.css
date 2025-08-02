@@ -67,12 +67,12 @@
 
 .form label{
   display:block;
-  /* margin-bottom:2px; */
+  margin-bottom:2px;
   font-weight:600;
 }
 
 .form .form-control{
-  margin-bottom:8px;
+  margin-bottom:12px;
 }
 
 .form input[type="text"],
@@ -82,8 +82,9 @@
   padding:4px 8px;
   height:40px;
   outline:none;
-  border-radius:5px;
-  border-color:#ccc;
+  /* border-radius:5px; */
+  border:2px solid #ccc;
+  border-radius:4px;
 }
 
 /* Buttons */
