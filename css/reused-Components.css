@@ -1,9 +1,16 @@
+/*Grid Container*/
 .grid_container{
   display:grid;
   gap:16px;
   padding:8px;
 }
 
+/* Two Column Grid */
+.two_grid_column_container{
+  grid-template-columns: repeat(2,1fr);
+}
+
+/*Cards*/
 .card{
   border:1px solid #ccc;
   border-radius:8px;
@@ -11,6 +18,7 @@
   padding:8px;
 }
 
+/* Section Heading */
 .two_grid_column_container{
   grid-template-columns: repeat(2,1fr);
 }
@@ -28,16 +36,30 @@
   font-size:24px;
 }
 
+/*Flex Container*/
+.flex-container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding:8px;
+}
+
 /*Forms*/
 .form{
   width:100%;
-  padding:8px;
+  padding:8px 0;
 }
 
 .form label{
   display:block;
-  margin-bottom:4px;
+  /* margin-bottom:2px; */
   font-weight:600;
+}
+
+.form .form-control{
+  margin-bottom:8px;
 }
 
 .form input[type="text"],
