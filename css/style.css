@@ -43,6 +43,7 @@ h2{
 
 /* Header */
 .js-main-header-home-page{
+  position:relative;
   background-image:url("https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,6 +51,18 @@ h2{
   width:100%;
   height:100vh;
   color:#fff;
+  z-index:800;
+}
+
+.js-main-header-home-page::after{
+  content:"";
+  background-color:rgba(114, 113, 113, 0.6);
+  position:absolute;
+  top:0;
+  bottom:0;
+  height:100%;
+  width:100%;
+  z-index:-1;
 }
 
 .logo i{
@@ -109,6 +122,15 @@ h2{
   height:100%;
   width:100%;
   object-fit:fill;
+}
+
+.js-hero-section{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  z-index:500;
+  color:#fff;
 }
 
 

@@ -26,6 +26,10 @@
   overflow:hidden;
 }
 
+.card_description p{
+  text-align:left;
+}
+
 /* Section Heading */
 .section_heading{
   text-align:center;
@@ -175,11 +179,11 @@ img{
 
 /* Main */
 .js-main section{
-  padding:24px 16px;
+  padding:48px 16px;
 }
 
 .js-main section:nth-child(odd){
-  background-color:cornsilk;
+  background-color: cornsilk;
   margin:0;
   /* padding:16px; */
 }
