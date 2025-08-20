@@ -55,17 +55,20 @@ h2{
   z-index:800;
 }
 
+/* Header Overlay */
 .js-main-header-home-page::after{
   content:"";
-  background-color:rgba(114, 113, 113, 0.6);
+  background-color:rgba(26, 26, 26, 0.8);
   position:absolute;
   top:0;
-  bottom:0;
+  left:0;
+  right:0;
   height:100%;
   width:100%;
   z-index:-1;
 }
 
+/* Logo Icon */
 .logo i{
   font-size:24px;
 }
@@ -79,7 +82,7 @@ h2{
   z-index:999;
   background-color:#333;
   color:#fff;
-  padding:8px 16px;
+  padding:8px 32px;
   height:70px;
   /* width:100%; */
 }
@@ -99,14 +102,43 @@ h2{
 
 /*Hero*/
 .js-hero-section{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100%;
+  z-index:500;
+  color:#fff;
   padding:24px 16px;
+  /* max-width: 400px;
+  margin:0 auto; */
+}
+
+.js-hero-description{
+  text-align: left;
+}
+
+.js-hero-description h1{
+  font-size:32px;
+}
+
+.js-hero-description p{
+  text-align:left;
+  font-size:18px;
+}
+
+.js-hero-cta-buttons{
+  margin-top:20px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.js-hero-cta-buttons a{
+  font-size:16px;
 }
 
 /* Main  */
 .js-main{
-  /* padding-right:16px;
-  padding-left:16px; */
-  /* padding:24px 16px; */
+  /* padding-top:24px; */
 }
 
 /* Reviews Styles */
@@ -124,16 +156,6 @@ h2{
   width:100%;
   object-fit:fill;
 }
-
-.js-hero-section{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  height:100%;
-  z-index:500;
-  color:#fff;
-}
-
 
 /* Media Queries */
 @media only screen and (min-width:768px) {
