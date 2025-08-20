@@ -80,10 +80,11 @@ h2{
   left:0;
   right:0;
   z-index:999;
-  background-color:#333;
+  background-color:#111;
   color:#fff;
-  padding:8px 32px;
+  padding:16px 32px;
   height:70px;
+  /* box-shadow:0 0 2px #fff; */
   /* width:100%; */
 }
 

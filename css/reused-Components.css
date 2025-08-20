@@ -178,6 +178,11 @@ i{
   font-size:24px;
 }
 
+/* Scroll lands exactly at the right section below navbar */
+.section-scroll-margin-top{
+  scroll-margin-top:71px;
+}
+
 /* Footer */
 .js-footer{
   background-color:#333;
