@@ -56,8 +56,19 @@ img{
   overflow:hidden;
 }
 
+.card_description{
+  padding:8px 0;
+}
+
 .card_description p{
   text-align:left;
+}
+
+.card-key-info{
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+  gap:4px;
 }
 
 /*Forms*/
@@ -113,6 +124,15 @@ img{
   /* background-color:rgb(224, 65, 65); */
   color:#fff;
   border:1px ridge #fff;
+}
+
+.button-tertiary{
+  background-color:#333;
+  color:#fff;
+}
+
+.button-tertiary:hover{
+  background-color: #111;
 }
 
 .button-secondary:hover{
@@ -183,11 +203,12 @@ i{
   scroll-margin-top:71px;
 }
 
-.container{
+/* .container{
   max-width:1200px;
   margin:0 auto;
   padding:16px;
-}
+} */
+
 /* Footer */
 .js-footer{
   background-color:#333;

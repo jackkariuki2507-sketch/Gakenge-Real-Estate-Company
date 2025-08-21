@@ -142,6 +142,43 @@ h2{
   /* padding-top:24px; */
 }
 
+/* /Featured Listings */
+.featured_listing_card{
+  padding:8px;
+}
+
+.card-image-container{
+  border:1px ridge gold;
+  border-radius:8px;
+}
+
+.card-title-price-container h3{
+  font-size:18px;
+}
+
+.card-title-price-container p{
+  font-size:16px;
+}
+
+.card-location p{
+  font-weight:600;
+  color:#333;
+  font-size:14px;
+}
+
+.card-key-info li{
+  font-size:12px;
+}
+
+.card_button_container a{
+  font-size:12px;
+}
+
+.card-title-price-container,
+.card-location{
+  margin-bottom:8px;
+}
+
 /* Reviews Styles */
 .client_reviews_container .card{
   display:flex;
