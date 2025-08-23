@@ -160,12 +160,21 @@ h2{
 
 .card-title-price-container p{
   font-size:16px;
+  font-weight:600;
 }
 
 .card-location p{
   font-weight:600;
   color:#333;
   font-size:14px;
+}
+
+.card-key-info{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap:4px;
+  margin-bottom:4px;
 }
 
 .card-key-info li{

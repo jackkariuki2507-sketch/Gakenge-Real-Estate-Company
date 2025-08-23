@@ -46,6 +46,7 @@ img{
   border-radius:8px;
   box-shadow:2px 2px 2px #ccc;
   padding:8px;
+  background-color:#fff;
 }
 
 .card_header{
@@ -62,13 +63,6 @@ img{
 
 .card_description p{
   text-align:left;
-}
-
-.card-key-info{
-  display:flex;
-  align-items:center;
-  justify-content: space-evenly;
-  gap:4px;
 }
 
 /*Forms*/
@@ -177,14 +171,18 @@ i{
 /* Main */
 .js-main section{
   padding:48px 16px;
+  margin:0;
 }
 
 .js-main section:nth-child(odd){
-  background-color: cornsilk;
-  margin:0;
+  background-color: linen;
+  /* margin:0; */
   /* padding:16px; */
 }
 
+.js-main section:nth-child(even){
+  background-color:white;
+}
 /* Section Heading */
 .section_heading{
   text-align:center;
