@@ -25,6 +25,11 @@ img{
   padding:8px;
 }
 
+/*One Column Grid*/
+.one_grid_column_container{
+  grid-template-columns: 1fr;
+}
+
 /* Two Column Grid */
 .two_grid_column_container{
   grid-template-columns: repeat(2,1fr);
@@ -59,6 +64,11 @@ img{
 
 .card_description{
   padding:8px 0;
+}
+
+.card_description h3{
+  font-size:16px;
+  color:#111;
 }
 
 .card_description p{
