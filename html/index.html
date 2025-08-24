@@ -79,7 +79,7 @@
           <a href="#js-browse-listing" class="button button-primary scroll-To-Specific-Section">
             Browse Listings
           </a>
-          <a href="#js-talk-to-agent" class="button button-secondary">
+          <a href="#section_talk_to_agent_features" class="button button-secondary">
             Talk to an Agent
           </a>
         </div>
@@ -419,15 +419,44 @@
       </div>
     </section>
 
-    <section class="section_talk_to_agent_features section_heading section-scroll-margin-top" id="js-talk-to-agent">
-      <h2>
-        Talk to an Agent
-      </h2>
-      <h3>24/7 
-        <span>
-          Monday - Saturday
-        </span>
-      </h3>
+    <section id="section_talk_to_agent_features" class="section_talk_to_agent_features section_heading section-scroll-margin-top">
+      <div class="container">
+        <div id="talk-to-agent-features" class="talk-to-agent-features grid_container one_grid_column_container">
+          <div class="card-image-contain">
+            <img src="https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg" alt="talk to agent"/>
+          </div>
+          <div class="card-agent-form">
+            <div class="card-agent-title">
+              <h2>
+                Talk to an Agent
+              </h2>
+            </div>
+            <div class="card-agent-body">
+              <form class="form ">
+                <div class="form-control">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" class="js-fullName"/>
+                </div>
+                <div class="form-control">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" id="emailAddress" class="js-emailAddress" placeholder="example@mail.com"/>
+                </div>
+                <div class="form-control">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" id="phoneNumber" class="js-phoneNumber" placeholder="(+xx) xxx xxx xxx">
+                </div>
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea class="js-Message" id="message" placeholder="Please leave your message here."></textarea>
+                </div>
+                <div class="form-control">
+                  <input type="submit" class="button button-primary button-stretched">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="js-footer">

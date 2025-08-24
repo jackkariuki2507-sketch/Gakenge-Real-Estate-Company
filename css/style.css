@@ -31,15 +31,16 @@ ul{
 }
 
 h1,h2,h3,h4,h5{
-  margin-bottom:5px;
+  margin-bottom:4px;
 }
 
 h1{
-  font-size:32px;
+  font-size:40px;
 }
 
 h2{
-  font-size:24px;
+  font-size:36px;
+  color:#111;
 }
 
 /* Header */
@@ -239,6 +240,43 @@ h2{
   height:100%;
   width:100%;
   object-fit:fill;
+}
+
+/* Talk to Agent Styles */
+#section_talk_to_agent_features{
+  padding:0;
+  margin:0;
+  /* border:1px solid #333; */
+}
+
+#talk-to-agent-features{
+  gap:0;
+  padding:0;
+}
+
+.card-image-contain img {
+  height:100%;
+}
+
+.card-agent-form{
+  background-color:rgba(26, 26, 26, 0.8);
+  padding:24px 16px;
+}
+
+.card-agent-form h2{
+  margin-bottom:0;
+}
+
+.card-agent-form h2,
+.card-agent-form label{
+  color:#fff;
+}
+
+.card-agent-form .form{
+  padding-top:8px;
+}
+.card-agent-form label{
+  text-align:left;
 }
 
 /* Media Queries */
