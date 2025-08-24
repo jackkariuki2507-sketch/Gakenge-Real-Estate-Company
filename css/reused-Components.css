@@ -41,8 +41,12 @@ img{
   flex-direction:row;
   justify-content:space-between;
   align-items:center;
-  gap:16px;
+  gap:8px;
   padding:8px;
+}
+
+.flex-direction-column{
+  flex-direction: column;
 }
 
 /*Cards*/
@@ -144,6 +148,10 @@ img{
 
 .button-stretched{
   width:100%;
+}
+
+.button-stretched:hover{
+  background-color:#72AD21;
 }
 
 .button-tertiary{
@@ -260,4 +268,9 @@ i{
 .footer_container div:nth-of-type(2),
 .footer_container div:not(:last-child){
   margin-bottom:16px;
+}
+
+.js-address-information p {
+  margin-right:4px;
+  text-align:left;
 }
