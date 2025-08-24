@@ -217,6 +217,14 @@ i{
   padding:16px;
 } */
 
+/* Stars Styles */
+.star_rating{
+  margin-bottom:8px;
+}
+.star-checked{
+  color:orange;
+  font-size:14px;
+}
 /* Footer */
 .js-footer{
   background-color:#333;
