@@ -220,6 +220,11 @@ h2{
   color:rgb(42, 42, 230);
 }
 
+/* Client Testimonials */
+.card-client-testimony{
+  font-size:14px;
+}
+
 /* Reviews Styles */
 .client_reviews_container .card{
   display:flex;
