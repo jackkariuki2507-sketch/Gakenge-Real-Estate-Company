@@ -301,7 +301,7 @@ h2{
 
 .card-tip-header h3{
   font-size:14px;
-  color:#2b2a2a;
+  color:#1b1b1b;
   margin:0;
 }
 
@@ -316,6 +316,10 @@ h2{
 .card-tip-body{
   padding:0 8px;
   text-align:left;
+}
+
+.card-tip-body p{
+  color:#242424;
 }
 
 

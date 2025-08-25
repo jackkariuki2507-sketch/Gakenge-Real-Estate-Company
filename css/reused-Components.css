@@ -98,14 +98,15 @@ img{
 
 .form input::placeholder,
 .form textarea::placeholder{
-  font-size:16px;
+  font-size:14px;
   color:#111;
 }
 
 .form input[type="text"],
 .form input[type="password"],
 .form input[type="email"],
-.form textarea{
+.form textarea,
+.form select{
   width:100%;
   padding:4px 8px;
   height:40px;
