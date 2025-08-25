@@ -333,6 +333,13 @@ h2{
   padding:8px 4px;
 }
 
+#team_members_container .card-image-container{
+  width:156px;
+  align-self:center;
+  justify-self:center;
+  margin-bottom:8px;
+}
+
 /* Media Queries */
 /* Small Mobile Devices */
 @media only screen and (max-width:400px){
@@ -397,12 +404,12 @@ h2{
   }
 
   .card-title-price-container h3{
-    font-size:24px!important;
+    font-size:18px!important;
     margin:0;
   }
 
   .card-title-price-container p{
-    font-size:20px;
+    font-size:16px;
     margin:0;
   }
 
@@ -412,7 +419,7 @@ h2{
   }
 
   .card-location p{
-    font-size:18px;
+    font-size:14px;
   }
 
   .card-key-info{
@@ -420,7 +427,7 @@ h2{
   }
 
   .card-key-info li{
-    font-size:16px;
+    font-size:12px;
   }
 
   .card_button_container a{
@@ -432,11 +439,36 @@ h2{
     height:228px;
   }
   
-  .team_members_container{
+  #team_members_container{
     grid-template-columns: repeat(3,1fr)!important;
+    text-align:center;
   }
 
+  #team_members_container .card-image-container{
+    width:200px;
+  }
   /* #talk-to-agent-features{
     grid-template-columns: repeat(2,1fr);
   } */
+}
+
+@media only screen and (min-width:992px){
+  #project_features_container{
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  #client_reviews_container{
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  #talk-to-agent-features{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  #footer_container{
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+    /* height:120px; */
+  }
 }
