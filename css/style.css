@@ -102,6 +102,13 @@ h2{
   font-size:24px;
 }
 
+.js-navBar-items li{
+  margin-right:16px;
+}
+
+.js-navBar-items li:last-child{
+  margin-right:0;
+}
 /*Hero*/
 .js-hero-section{
   display:flex;
@@ -326,17 +333,110 @@ h2{
   padding:8px 4px;
 }
 
-
 /* Media Queries */
 /* Small Mobile Devices */
 @media only screen and (max-width:400px){
   .card-image-container{
     height:128px;
   }
+
+  /* .team_container .card-image-container{
+    height:220px;
+  } */
 }
 
-@media only screen and (min-width:768px) {
+/* @media only screen and (min-width:768px) {
   .js-main-header-home-page{
     background-position: center;
   }
+} */
+
+@media only screen and (min-width:768px){
+  .js-navBar-createAcc-Container{
+    display:block;
+  }
+
+  .js-navBar-Toggle{
+    display:none;
+  }
+
+  .device-container-center{
+    max-width:800px!important;
+  }
+
+  .js-hero-description{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .js-hero-description h1{
+    font-size:48px;
+  }
+
+  .js-hero-description p{
+    text-align:left;
+    font-size:24px;
+    /* margin-bottom:8px; */
+  }
+
+  .js-hero-cta-buttons a:not(:last-child) {
+    margin-right:24px;
+  }
+
+  .section_heading h2{
+    font-size:36px!important;
+  }
+
+  .card-title-price-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+  }
+
+  .card-title-price-container h3{
+    font-size:24px!important;
+    margin:0;
+  }
+
+  .card-title-price-container p{
+    font-size:20px;
+    margin:0;
+  }
+
+  .card-location{
+    flex-direction:row;
+    justify-content:space-between;
+  }
+
+  .card-location p{
+    font-size:18px;
+  }
+
+  .card-key-info{
+    gap:8px;
+  }
+
+  .card-key-info li{
+    font-size:16px;
+  }
+
+  .card_button_container a{
+    font-size:16px;
+    width:100%;
+  }
+
+  .card-image-container{
+    height:228px;
+  }
+  
+  .team_members_container{
+    grid-template-columns: repeat(3,1fr)!important;
+  }
+
+  /* #talk-to-agent-features{
+    grid-template-columns: repeat(2,1fr);
+  } */
 }

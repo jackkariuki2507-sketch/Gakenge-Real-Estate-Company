@@ -197,7 +197,7 @@ i{
 }
 
 /* Mobile Device Maximum Container */
-.mobile-device-container-center{
+.device-container-center{
   max-width: 400px;
   margin:0 auto;
 }
