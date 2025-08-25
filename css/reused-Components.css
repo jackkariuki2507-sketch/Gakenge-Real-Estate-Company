@@ -248,6 +248,16 @@ i{
   color:orange;
   font-size:14px;
 }
+
+/*Display Styles*/
+.hide-container{
+  display:none;
+}
+
+.unhide-container{
+  display:block;
+}
+
 /* Footer */
 .js-footer{
   background-color:#333;

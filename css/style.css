@@ -279,6 +279,46 @@ h2{
   text-align:left;
 }
 
+/*Real Estate Tips Section*/
+.tips_features_container{
+  /* background-color:#d4d3d3; */
+  /* padding:16px 8px; */
+  max-width:400px;
+}
+
+.card-tip{
+  width:100%;
+  background-color:#fff;
+  border-bottom:1px solid #ccc;
+  padding:8px 4px;
+  /* margin-bottom */
+  /* box-shadow:0 2px 2px #fff; */
+}
+
+.card-tip-header{
+  align-items:center;
+}
+
+.card-tip-header h3{
+  font-size:14px;
+  color:#2b2a2a;
+  margin:0;
+}
+
+.card-tip-header button{
+  background-color:transparent;
+}
+
+.card-tip-header button i{
+  font-size:14px;
+}
+
+.card-tip-body{
+  padding:0 8px;
+  text-align:left;
+}
+
+
 /* Media Queries */
 /* Small Mobile Devices */
 @media only screen and (max-width:400px){
