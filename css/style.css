@@ -8,11 +8,9 @@
 }
 
 /*Mobile First Design*/
-
 body{
   font-family:"Poppins",sans-serif;
   font-size:1rem;
-  /* padding-top:72px; */
   padding-top:70px;
   color:#333;
   line-height:1.5;
@@ -71,7 +69,11 @@ h2{
 
 /* Logo Icon */
 .logo i{
-  font-size:24px;
+  font-size:20px;
+}
+
+.logo span{
+  font-size:18px;
 }
 
 /*Navigation Bar*/
@@ -85,8 +87,6 @@ h2{
   color:#fff;
   padding:16px 32px;
   height:70px;
-  /* box-shadow:0 0 2px #fff; */
-  /* width:100%; */
 }
 
 .js-navBar-createAcc-Container{
@@ -109,6 +109,7 @@ h2{
 .js-navBar-items li:last-child{
   margin-right:0;
 }
+
 /*Hero*/
 .js-hero-section{
   display:flex;
@@ -118,8 +119,6 @@ h2{
   z-index:500;
   color:#fff;
   padding:24px 16px;
-  /* max-width: 400px;
-  margin:0 auto; */
 }
 
 .js-hero-description{
@@ -146,11 +145,11 @@ h2{
 }
 
 /* Main  */
-.js-main{
-  /* padding-top:24px; */
-}
+/* .js-main{
+   padding-top:24px; 
+} */
 
-/* /Featured Listings */
+/* /Featured Listings Section */
 .featured_listing_card{
   padding:8px;
 }
@@ -207,7 +206,6 @@ h2{
 .card-team-title,
 .card-client-title{
   margin-bottom:8px;
-  /* border:1px solid black; */
 }
 
 .card-bio-info h4{
