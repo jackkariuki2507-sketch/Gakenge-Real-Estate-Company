@@ -71,7 +71,11 @@ h2{
 
 /* Logo Icon */
 .logo i{
-  font-size:24px;
+  font-size:20px;
+}
+
+.logo span{
+  font-size:18px;
 }
 
 /*Navigation Bar*/
