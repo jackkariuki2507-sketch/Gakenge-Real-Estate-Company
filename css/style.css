@@ -1,5 +1,6 @@
 /* /Import Font Family Styles */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap');
 
 /*Reset the default styles*/
 *{
@@ -8,15 +9,46 @@
   margin:0;
 }
 
-/*Mobile First Design*/
+/* CSS Variables  */
+:root{
+  /* Container*/
+   --container-max-width:1200px;
+   --content-center-margin:0 auto;
+
+   /*Font Family*/
+   --heading-font-family:"Poppins",sans-serif;
+   --base-text-font-family:"Roboto","sans-serif";
+}
+
+/* Container Styles */
+.container{
+  max-width:var(--container-max-width);
+  margin:var(--content-center-margin);
+  padding:20px;
+}
+
+/* Mobile First Design */
 body{
-  font-family:"Poppins",sans-serif;
+  font-family:var(--heading-font-family);
   font-size:1rem;
   padding-top:70px;
-  color:#333;
+  color:var(--dark-gray-color);
   line-height:1.5;
 }
 
+/* Headings */
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--heading-font-family);
+  line-height:var(--heading-line-height);
+  margin-bottom:var(--heading-margin-bottom);
+}
+
+/* Base Text styles */
+p,li,a,span,button{
+  font-family:var(--base-text-font-family);
+}
+
+/* 
 a{
   text-decoration:none;
   cursor:pointer;
@@ -40,10 +72,10 @@ h1{
 h2{
   font-size:36px;
   color:#111;
-}
+} */
 
 /* Header */
-.js-main-header-home-page{
+/* .js-main-header-home-page{
   position:relative;
   background-image:url("https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg");
   background-repeat: no-repeat;
@@ -53,10 +85,10 @@ h2{
   height:100vh;
   color:#fff;
   z-index:800;
-}
+} */
 
 /* Header Overlay */
-.js-main-header-home-page::after{
+/* .js-main-header-home-page::after{
   content:"";
   background-color:rgba(26, 26, 26, 0.8);
   position:absolute;
@@ -66,20 +98,20 @@ h2{
   height:100%;
   width:100%;
   z-index:-1;
-}
+} */
 
 /* Logo Icon */
-.logo i{
+/* .logo i{
   font-size:20px;
 }
 
 .logo span{
   font-size:18px;
   letter-spacing:2px;
-}
+} */
 
 /*Navigation Bar*/
-.js-navigation-container{
+/* .js-navigation-container{
   position:fixed;
   top:0;
   left:0;
@@ -93,10 +125,10 @@ h2{
 
 .js-navBar-createAcc-Container{
   display:none;
-}
+} */
 
 /* Navigation Bar Toggle Bar */
-.js-navBar-Toggle{
+/* .js-navBar-Toggle{
   display:block;
 }
 
@@ -110,10 +142,10 @@ h2{
 
 .js-navBar-items li:last-child{
   margin-right:0;
-}
+} */
 
 /*Hero*/
-.js-hero-section{
+/* .js-hero-section{
   display:flex;
   align-items: center;
   justify-content: center;
@@ -144,7 +176,7 @@ h2{
 
 .js-hero-cta-buttons a{
   font-size:16px;
-}
+} */
 
 /* Main  */
 /* .js-main{
@@ -152,7 +184,7 @@ h2{
 } */
 
 /* /Featured Listings Section */
-.featured_listing_card{
+/* .featured_listing_card{
   padding:8px;
 }
 
@@ -226,15 +258,15 @@ h2{
 
 .card-team-info p a{
   color:rgb(42, 42, 230);
-}
+} */
 
 /* Client Testimonials */
-.card-client-testimony{
+/* .card-client-testimony{
   font-size:14px;
-}
+} */
 
 /* Reviews Styles */
-.client_reviews_container .card{
+/* .client_reviews_container .card{
   display:flex;
   flex-direction: column;
   align-items:center;
@@ -247,13 +279,12 @@ h2{
   height:100%;
   width:100%;
   object-fit:fill;
-}
+} */
 
 /* Talk to Agent Styles */
-#section_talk_to_agent_features{
+/* #section_talk_to_agent_features{
   padding:0;
   margin:0;
-  /* border:1px solid #333; */
 }
 
 #talk-to-agent-features{
@@ -284,12 +315,10 @@ h2{
 }
 .card-agent-form label{
   text-align:left;
-}
+} */
 
 /*Real Estate Tips Section*/
-.tips_features_container{
-  /* background-color:#d4d3d3; */
-  /* padding:16px 8px; */
+/* .tips_features_container{
   max-width:400px;
 }
 
@@ -298,8 +327,6 @@ h2{
   background-color:#fff;
   border-bottom:1px solid #ccc;
   padding:8px 4px;
-  /* margin-bottom */
-  /* box-shadow:0 2px 2px #fff; */
 }
 
 .card-tip-header{
@@ -338,25 +365,15 @@ h2{
   align-self:center;
   justify-self:center;
   margin-bottom:8px;
-}
+} */
 
 /* Media Queries */
 /* Small Mobile Devices */
-@media only screen and (max-width:400px){
+/* @media only screen and (max-width:400px){
   .card-image-container{
     height:128px;
   }
-
-  /* .team_container .card-image-container{
-    height:220px;
-  } */
 }
-
-/* @media only screen and (min-width:768px) {
-  .js-main-header-home-page{
-    background-position: center;
-  }
-} */
 
 @media only screen and (min-width:768px){
   .js-navBar-createAcc-Container{
@@ -385,7 +402,6 @@ h2{
   .js-hero-description p{
     text-align:left;
     font-size:24px;
-    /* margin-bottom:8px; */
   }
 
   .js-hero-cta-buttons a:not(:last-child) {
@@ -447,9 +463,6 @@ h2{
   #team_members_container .card-image-container{
     width:200px;
   }
-  /* #talk-to-agent-features{
-    grid-template-columns: repeat(2,1fr);
-  } */
 }
 
 @media only screen and (min-width:992px){
@@ -469,6 +482,12 @@ h2{
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
-    /* height:120px; */
+  }
+} */
+
+@media only screen and (min-width:1200px){
+  .container{
+    --container-max-width:1400px;
+    max-width:var(--container-max-width);
   }
 }
