@@ -1,20 +1,44 @@
+/* CSS Variables */
+:root{
+  /* Heading Styles */
+  --heading-line-height:1.3;
+  --heading-margin-bottom:1rem;
+
+  /* Paragraph Styles */
+  --paragraph-line-height:1.2;
+  --paragraph-margin-bottom:4px;
+
+  /* Colors */
+  --white-color:#ffffff;
+  --black-color:#111111;
+  --dark-gray-color:#333333;
+  --light-gray-color:#333222;
+  --primary-button-color:#609911;
+  --dark-green:#335504;
+  --lime-green:#72AD21;
+
+  /*Paddings*/
+  --small-device-padding:8px 10px;
+  --tablet-device-padding:12px 16px;
+  --dekstop-device-padding:14px 20px;
+}
+
 /* Headings */
 h1,h2,h3,h4,h5{
-  line-height:1.3;
-  margin-bottom:16px;
+  line-height:var(--heading-line-height);
+  margin-bottom:var(--heading-margin-bottom);
 }
 
 /* Paragraph Styles */
 p{
-  line-height:1.2;
-  margin-bottom:4px;
+  line-height:var(--paragraph-line-height);
+  margin-bottom:var(--paragraph-margin-bottom);
 }
 
 /* Images Styles */
 img{
   width:100%;
   height:100%;
-  /* object-fit: cover; */
   object-position: center;
 }
 
@@ -55,7 +79,7 @@ img{
   border-radius:8px;
   box-shadow:2px 2px 2px #ccc;
   padding:8px;
-  background-color:#fff;
+  background-color:var(--white-color);
 }
 
 .card_header{
@@ -72,7 +96,7 @@ img{
 
 .card_description h3{
   font-size:16px;
-  color:#111;
+  color:var(--black-color);
 }
 
 .card_description p{
@@ -99,7 +123,7 @@ img{
 .form input::placeholder,
 .form textarea::placeholder{
   font-size:14px;
-  color:#111;
+  color:var(--black-color);
 }
 
 .form input[type="text"],
@@ -111,7 +135,6 @@ img{
   padding:4px 8px;
   height:40px;
   outline:none;
-  /* border-radius:5px; */
   border:2px solid #ccc;
   border-radius:4px;
 }
@@ -133,18 +156,17 @@ img{
 }
 
 .button-primary{
-  background-color:#609911;
-  color:#fff;
+  background-color:var(--primary-button-color);
+  color:var(--white-color);
 }
 
 .button-primary:hover{
-  background-color: #335504;
+  background-color: var(--dark-green);
 }
 
 .button-secondary{
-  /* background-color:rgb(224, 65, 65); */
-  color:#fff;
-  border:1px ridge #fff;
+  color:var(--white-color);
+  border:1px ridge var(--white-color);
 }
 
 .button-stretched{
@@ -152,23 +174,22 @@ img{
 }
 
 .button-stretched:hover{
-  background-color:#72AD21;
+  background-color:var(--lime-green);
 }
 
 .button-tertiary{
-  background-color:#333;
-  color:#fff;
+  background-color:var(--dark-gray-color);
+  color:var(--white-color);
 }
 
 .button-tertiary:hover{
-  background-color: #111;
+  background-color: var(--black-color);
 }
 
 .button-secondary:hover{
    background-color:rgb(224, 65, 65);
-   /* border:0; */
    border-color:rgb(224, 65, 65);
-   color:#111;
+   color:var(--black-color);
 }
 
 .button-large{
@@ -179,11 +200,6 @@ img{
   opacity:0.7;
   cursor:not-allowed;
 }
-
-/* .re-enabled-button{
-  opacity:1;
-  cursor:pointer;
-} */
 
 /* Submit Form Button Styles */
 .js-form-submit-btn{
@@ -210,21 +226,15 @@ i{
 
 .js-main section:nth-child(odd){
   background-color: linen;
-  /* margin:0; */
-  /* padding:16px; */
 }
 
 .js-main section:nth-child(even){
-  background-color:white;
+  background-color:var(--white-color);
 }
 /* Section Heading */
 .section_heading{
   text-align:center;
 }
-
-/* .section_heading h1{
-  font-size:32px;
-} */
 
 .section_heading h2{
   font-size:24px;
@@ -234,12 +244,6 @@ i{
 .section-scroll-margin-top{
   scroll-margin-top:71px;
 }
-
-/* .container{
-  max-width:1200px;
-  margin:0 auto;
-  padding:16px;
-} */
 
 /* Stars Styles */
 .star_rating{
@@ -261,8 +265,8 @@ i{
 
 /* Footer */
 .js-footer{
-  background-color:#333;
-  color:#fff;
+  background-color:var(--dark-gray-color);
+  color:var(--white-color);
   height:auto;
   padding:16px;
 }
