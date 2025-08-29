@@ -14,7 +14,7 @@
   /* Container*/
    --container-max-width:1200px;
    --content-center-margin:0 auto;
-   --container-padding:16px;
+   --container-padding:20px;
 
    /*Font Family*/
    --heading-font-family:"Poppins",sans-serif;
@@ -23,6 +23,11 @@
    /*Links*/
    --link-cursor-type:pointer;
 
+   /* z-index */
+   --max-z-index:9999;
+   --med-z-index:999;
+   --min-z-index:-1;
+
 }
 
 /* Container Styles */
@@ -30,13 +35,14 @@
   max-width:var(--container-max-width);
   margin:var(--content-center-margin);
   padding:var(--container-padding);
+  /* border:1px solid red; */
 }
 
 /* Mobile First Design */
 body{
   font-family:var(--heading-font-family);
   font-size:1rem;
-  padding-top:70px;
+  /* padding-top:70px; */
   color:var(--dark-gray-color);
   line-height:1.5;
 }
@@ -80,6 +86,114 @@ p{
 
 i{
   vertical-align:middle;
+}
+
+/* Header */
+.js-main-header{
+  position:relative;
+  height:100vh;
+  width:100%;
+  background-image:url("https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:cover;
+  z-index:var(--med-z-index);
+}
+
+/* Overlay */
+.js-main-header::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  background-color:rgba(26, 26, 26, 1);
+  height:100%;
+  width:100%;
+  z-index:var(--min-z-index);
+}
+
+/*Navigation Bar*/
+.js-navigation-bar{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  /* background-color:var(--dark-gray-color); */
+  background-color: var(--transparent-bg-color);
+  height:70px;
+  z-index:var(--max-z-index);
+}
+
+.js-navigation-bar .container{
+  justify-content:space-between;
+  align-items:center;
+  height:100%;
+  padding:20px;
+}
+
+.nav-link-items{
+  display:none;
+  color:var(--white-color);
+}
+
+.nav-link-items .nav-link-item{
+  margin-right:16px;
+  margin-left:16px;
+}
+
+.nav-link-items .nav-link-item:last-child{
+  margin-right:0;
+}
+
+.nav-link-items .nav-link-item a{
+  color:var(--white-color);
+}
+
+.js-navBar-Toggle i,
+.logo i{
+    color:var(--white-color);
+}
+
+.logo a{
+  letter-spacing: 1.5px;
+}
+
+/* Hero */
+.js-hero{
+  position:relative;
+  height:100%;
+}
+
+.js-hero .container{
+  flex-direction:column;
+  justify-content:center;
+  height:100%;
+  --container-max-width:100%;
+  max-width:var(--container-max-width);
+  padding:20px;
+}
+
+.js-hero h1,
+.js-hero p{
+  color:var(--white-color);
+}
+
+.js-hero .js-hero-description{
+  margin-bottom:var(--div-margin-bottom);
+  padding:0;
+  text-align:left;
+}
+
+.js-hero .js-hero-cta-buttons a:not(:last-child){
+  margin-right:16px;
+}
+
+/* Main */
+.js-main{
+  background-color:var(--dark-green);
+  height:400px;
 }
 
 /* Header */
@@ -493,7 +607,8 @@ i{
   }
 } */
 
-/* Heading,Paragraphs, Links, Buttons Media Queries */
+/* Heading,Paragraphs, Links, Buttons, Icons Media Queries */
+/* Mobile Devices */
 @media only screen and (max-width:767px){
   h1{
     font-size:24px;
@@ -519,7 +634,6 @@ i{
     font-size:14px;
   }
 
-  .logo a,
   .nav-link-items li a{
     padding:12px 16px;
   }
@@ -534,9 +648,103 @@ i{
   }
 }
 
-@media only screen and (min-width:1200px){
-  .container{
-    --container-max-width:1400px;
+/* Tablet devices */
+@media only screen and (min-width:768px){
+  h1{
+    font-size:28px;
+  }
+
+  h2{
+    font-size:24px;
+  }
+
+  h3{
+    font-size:20px;
+  }
+
+  h4{
+    font-size:18px;
+  }
+
+  p{
+    font-size:16px;
+  }
+
+  a{
+    font-size:16px;
+  }
+
+  i{
+    font-size:16px;
+  }
+
+  .button{
+    font-size:16px;
+    padding:12px 20px;
+  }
+
+  .js-hero .container{
+    align-items:center;
+    --container-max-width:720px;
+    max-width:var(--container-max-width);
+  }
+
+  .js-navigation-bar .container{
+    --container-max-width:720px;
+    max-width:var(--container-max-width);
+  }
+
+  .nav-link-items{
+    display:flex;
+  }
+
+  .js-navBar-Toggle{
+    display:none;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width:1024px){
+  h1{
+    font-size:36px;
+  }
+
+  h2{
+    font-size:32px;
+  }
+
+  h3{
+    font-size:28px;
+  }
+
+  h4{
+    font-size:24px;
+  }
+
+  p{
+    font-size:20px;
+  }
+
+  a{
+    font-size:20px;
+  }
+
+  i{
+    font-size:20px;
+  }
+
+  .button{
+    font-size:18px;
+    padding:14px 24px;
+  }
+
+  .js-hero .container{
+    --container-max-width:1440px;
+    max-width:var(--container-max-width);
+  }
+
+  .js-navigation-bar .container{
+    --container-max-width:1440px;
     max-width:var(--container-max-width);
   }
 }
