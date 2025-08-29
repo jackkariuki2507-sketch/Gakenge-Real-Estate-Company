@@ -192,8 +192,24 @@ i{
 
 /* Main */
 .js-main{
-  background-color:var(--dark-green);
+  background-color:var(--white-bg-color);
   height:400px;
+}
+
+/* Featured Listings */
+.card_description .card-title-price-container,
+.card_description .card-features{
+  justify-content: space-between;
+  align-items:center;
+}
+
+.card_description .card_button_container{
+  justify-self:center;
+}
+
+.card_description .card-title-price-container .property-price,
+.card_description .card-features .card-address p{
+  font-weight:500;
 }
 
 /* Header */
@@ -645,6 +661,10 @@ i{
 
   i{
     font-size:14px;
+  }
+
+  .section_projects_features .container{
+    grid-template-columns: var(--grid-cols-1);
   }
 }
 

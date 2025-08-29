@@ -17,6 +17,7 @@
   --dark-green:#335504;
   --lime-green:#72AD21;
   --transparent-bg-color:transparent;
+  --white-bg-color:#ffffff;
 
   /*Paddings*/
   --container-gap:8px;
@@ -25,6 +26,15 @@
   /* Margins */
   --div-margin-bottom:8px;
   --div-margin-top:8px;
+
+  /* Box Shadow */
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  /* Grid Columns */
+  --grid-cols-1:1fr;
+  --grid-cols-2:repeat(2,1fr);
+  --grid-cols-3:repeat(3,1fr);
+  --grid-cols-4:repeat(4,1fr);
 }
 
 /* Paragraph Styles */
@@ -43,8 +53,8 @@ img{
 /*Grid Container*/
 .grid_container{
   display:grid;
-  gap:16px;
-  padding:8px;
+  gap:var(--container-gap);
+  padding:var(--container-padding);
 }
 
 /*One Column Grid*/
@@ -121,6 +131,25 @@ img{
 .disabled-button{
   opacity:0.7;
   cursor:not-allowed;
+}
+
+/* Scroll lands exactly at the right section below navbar */
+.section-scroll-margin-top{
+  scroll-margin-top:71px;
+}
+
+/*Cards*/
+.card{
+  border:1px solid #ccc;
+  border-radius:8px;
+  box-shadow:var(--box-shadow);
+  padding:8px;
+  background-color:var(--white-color);
+}
+
+/* Section Header Container */
+.section-header{
+  padding:var(--container-padding);
 }
 
 /*Cards*/
@@ -237,11 +266,6 @@ img{
 
 .section_heading h2{
   font-size:24px;
-} */
-
-/* Scroll lands exactly at the right section below navbar */
-/* .section-scroll-margin-top{
-  scroll-margin-top:71px;
 } */
 
 /* Stars Styles */
