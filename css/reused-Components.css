@@ -12,17 +12,19 @@
   --white-color:#ffffff;
   --black-color:#111111;
   --dark-gray-color:#333333;
-  --light-gray-color:#333222;
+  --light-gray-color:#e0e0e0;
   --primary-button-color:#609911;
   --dark-green:#335504;
   --lime-green:#72AD21;
+  --transparent-bg-color:transparent;
 
   /*Paddings*/
-  /* --small-device-padding:8px 10px;
-  --tablet-device-padding:12px 16px;
-  --dekstop-device-padding:14px 20px; */
-  --flex-container-gap:8px;
-  --flex-container-padding:8px;
+  --container-gap:8px;
+  --container-padding:8px;
+
+  /* Margins */
+  --div-margin-bottom:8px;
+  --div-margin-top:8px;
 }
 
 /* Paragraph Styles */
@@ -69,18 +71,60 @@ img{
 .flex-container{
   display:flex;
   flex-direction:row;
-  /* justify-content:space-between;
-  align-items:center; */
-  gap:var(--flex-container-gap);
-  padding:var(--flex-container-padding);
+  gap:var(--container-gap);
+  padding:var(--container-padding);
 }
 
 .flex-direction-column{
   flex-direction: column;
 }
 
+/* Buttons */
+.button{
+  display:inline-block;
+  text-align:center;
+  cursor:pointer;
+  border:none;
+  outline:none;
+  border-radius:4px;
+  color:var(--white-color);
+}
+
+.button-primary{
+  background-color:var(--primary-button-color);
+}
+
+.button-primary:hover{
+  background-color: var(--dark-green);
+}
+
+.button-secondary{
+  border:1px ridge var(--white-color);
+  background-color:var(--light-gray-color);
+  color:var(--dark-gray-color);
+}
+
+.button-secondary:hover{
+   background-color:rgb(224, 65, 65);
+   border-color:rgb(224, 65, 65);
+   color:var(--black-color);
+}
+
+.button-tertiary{
+  background-color:var(--dark-gray-color);
+}
+
+.button-tertiary:hover{
+  background-color: var(--black-color);
+}
+
+.disabled-button{
+  opacity:0.7;
+  cursor:not-allowed;
+}
+
 /*Cards*/
-.card{
+/* .card{
   border:1px solid #ccc;
   border-radius:8px;
   box-shadow:2px 2px 2px #ccc;
@@ -108,9 +152,9 @@ img{
 .card_description p{
   text-align:left;
 }
-
+*/
 /*Forms*/
-.form{
+/* .form{
   width:100%;
   padding:8px 0;
 }
@@ -147,49 +191,7 @@ img{
 
 .form textarea{
   height:156px;
-}
-
-/* Buttons */
-.button{
-  display:inline-block;
-  text-align:center;
-  cursor:pointer;
-  border:none;
-  outline:none;
-  border-radius:4px;
-  color:var(--white-color);
-}
-
-.button-primary{
-  background-color:var(--primary-button-color);
-}
-
-.button-primary:hover{
-  background-color: var(--dark-green);
-}
-
-.button-secondary{
-  border:1px ridge var(--white-color);
-}
-
-.button-secondary:hover{
-   background-color:rgb(224, 65, 65);
-   border-color:rgb(224, 65, 65);
-   color:var(--black-color);
-}
-
-.button-tertiary{
-  background-color:var(--dark-gray-color);
-}
-
-.button-tertiary:hover{
-  background-color: var(--black-color);
-}
-
-.disabled-button{
-  opacity:0.7;
-  cursor:not-allowed;
-}
+} */ 
 
 /* .button-stretched{
   width:100%;
@@ -204,19 +206,19 @@ img{
 } */
 
 /* Submit Form Button Styles */
-.js-form-submit-btn{
+/* .js-form-submit-btn{
   margin-top:8px;
   border-radius:4px;
-}
+} */
 
 /* Mobile Device Maximum Container */
-.device-container-center{
+/* .device-container-center{
   max-width: 400px;
   margin:0 auto;
-}
+} */
 
 /* Main */
-.js-main section{
+/* .js-main section{
   padding:48px 16px;
   margin:0;
 }
@@ -227,41 +229,41 @@ img{
 
 .js-main section:nth-child(even){
   background-color:var(--white-color);
-}
+} */
 /* Section Heading */
-.section_heading{
+/* .section_heading{
   text-align:center;
 }
 
 .section_heading h2{
   font-size:24px;
-}
+} */
 
 /* Scroll lands exactly at the right section below navbar */
-.section-scroll-margin-top{
+/* .section-scroll-margin-top{
   scroll-margin-top:71px;
-}
+} */
 
 /* Stars Styles */
-.star_rating{
+/* .star_rating{
   margin-bottom:8px;
 }
 .star-checked{
   color:orange;
   font-size:14px;
-}
+} */
 
 /*Display Styles*/
-.hide-container{
+/* .hide-container{
   display:none;
 }
 
 .unhide-container{
   display:block;
-}
+} */
 
 /* Footer */
-.js-footer{
+/* .js-footer{
   background-color:var(--dark-gray-color);
   color:var(--white-color);
   height:auto;
@@ -285,4 +287,4 @@ img{
 .js-address-information p {
   margin-right:4px;
   text-align:left;
-}
+} */
