@@ -18,6 +18,9 @@
    /*Font Family*/
    --heading-font-family:"Poppins",sans-serif;
    --base-text-font-family:"Roboto","sans-serif";
+
+   /*Links*/
+   --link-cursor-type:pointer;
 }
 
 /* Container Styles */
@@ -41,18 +44,12 @@ h1,h2,h3,h4,h5,h6{
   font-family:var(--heading-font-family);
   line-height:var(--heading-line-height);
   margin-bottom:var(--heading-margin-bottom);
+  color:var(--black-color);
 }
 
 /* Base Text styles */
 p,li,a,span,button{
   font-family:var(--base-text-font-family);
-}
-
-/* 
-a{
-  text-decoration:none;
-  cursor:pointer;
-  color:#fff;
 }
 
 ul{
@@ -61,18 +58,26 @@ ul{
   margin:0;
 }
 
-h1,h2,h3,h4,h5{
-  margin-bottom:4px;
+/* Links */
+a{
+  display:block;
+  text-decoration:none;
+  color:var(--black-color);
 }
 
-h1{
-  font-size:40px;
+a:focus,
+a:hover{
+  cursor:var(--link-cursor-type);
+  text-decoration:underline;
 }
 
-h2{
-  font-size:36px;
-  color:#111;
-} */
+p{
+  line-height:var(--paragraph-line-height);
+}
+
+i{
+  vertical-align:middle;
+}
 
 /* Header */
 /* .js-main-header-home-page{
@@ -484,6 +489,47 @@ h2{
     align-items:center;
   }
 } */
+
+/* Heading,Paragraphs, Links, Buttons Media Queries */
+@media only screen and (max-width:767px){
+  h1{
+    font-size:24px;
+  }
+
+  h2{
+    font-size:20px;
+  }
+
+  h3{
+    font-size:18px;
+  }
+
+  h4{
+    font-size:16px;
+  }
+
+  p{
+    font-size:14px;
+  }
+
+  a{
+    font-size:14px;
+  }
+
+  .logo a,
+  .nav-link-items li a{
+    padding:12px 16px;
+  }
+
+  .button{
+    font-size:14px;
+    padding:10px 16px;
+  }
+
+  i{
+    font-size:14px;
+  }
+}
 
 @media only screen and (min-width:1200px){
   .container{
