@@ -14,6 +14,7 @@
   /* Container*/
    --container-max-width:1200px;
    --content-center-margin:0 auto;
+   --container-padding:16px;
 
    /*Font Family*/
    --heading-font-family:"Poppins",sans-serif;
@@ -21,13 +22,14 @@
 
    /*Links*/
    --link-cursor-type:pointer;
+
 }
 
 /* Container Styles */
 .container{
   max-width:var(--container-max-width);
   margin:var(--content-center-margin);
-  padding:20px;
+  padding:var(--container-padding);
 }
 
 /* Mobile First Design */
@@ -73,6 +75,7 @@ a:hover{
 
 p{
   line-height:var(--paragraph-line-height);
+  color:var(--dark-gray-color);
 }
 
 i{
