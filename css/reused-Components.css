@@ -16,8 +16,11 @@
   --primary-button-color:#609911;
   --dark-green:#335504;
   --lime-green:#72AD21;
+
+  /* Background-colors */
   --transparent-bg-color:transparent;
   --white-bg-color:#ffffff;
+  --dark-gray-bg-color:#333333;
 
   /*Paddings*/
   --container-gap:8px;
@@ -136,6 +139,14 @@ img{
 /* Scroll lands exactly at the right section below navbar */
 .section-scroll-margin-top{
   scroll-margin-top:71px;
+}
+
+.transparentNavBar{
+  background-color: var(--transparent-bg-color);
+}
+
+.coloredNavBar{
+  background-color:var(--dark-gray-bg-color);
 }
 
 /*Cards*/

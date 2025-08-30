@@ -705,11 +705,11 @@ i{
 
   .js-hero .container{
     align-items:center;
-    --container-max-width:720px;
-    max-width:var(--container-max-width);
   }
 
-  .js-navigation-bar .container{
+  .js-hero .container,
+  .js-navigation-bar .container,
+  .section_projects_features .container{
     --container-max-width:720px;
     max-width:var(--container-max-width);
   }
@@ -758,12 +758,9 @@ i{
     padding:14px 24px;
   }
 
-  .js-hero .container{
-    --container-max-width:1440px;
-    max-width:var(--container-max-width);
-  }
-
-  .js-navigation-bar .container{
+  .js-hero .container,
+  .js-navigation-bar .container,
+  .section_projects_features .container{
     --container-max-width:1440px;
     max-width:var(--container-max-width);
   }
