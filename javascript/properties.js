@@ -8,7 +8,7 @@ async function getPropertiesDetails(){
       throw new Error(`The error status is ${response.status} and message is ${response.statusText}`);
     }
     const responseData = await response.json();
-    console.log(responseData);
+    return responseData;
   }catch(error){
     console.error(error.message);
   }
