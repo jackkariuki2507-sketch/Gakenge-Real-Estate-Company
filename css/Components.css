@@ -138,6 +138,7 @@ img{
 
 /* Section Header Container */
 .section-header{
+  --container-padding:2px;
   padding:var(--container-padding);
 }
 
