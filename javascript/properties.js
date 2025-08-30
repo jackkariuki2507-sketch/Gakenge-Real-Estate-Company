@@ -29,7 +29,7 @@ async function displayPropertiesDetails(){
       <div class="card-image-container">
         <img src="${property_image}" alt="image description">
       </div>
-      <div class="card_description">
+      <div class="card_description flex-container">
         <div class="card-title-price-container flex-container">
           <h3>
             ${property_name}
@@ -40,10 +40,10 @@ async function displayPropertiesDetails(){
         </div>
         <div class="card-features flex-container">
           <div class="card-address">
-            <p>
+            <p class="location">
               ${property_address.location}
             </p>
-            <p>
+            <p class="street">
               ${property_address.street}
             </p>
           </div>
