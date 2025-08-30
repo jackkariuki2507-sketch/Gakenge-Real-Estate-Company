@@ -24,6 +24,7 @@ async function displayPropertiesDetails(){
     const propertyCardEl = document.createElement("div");
     propertyCardEl.className = "card";
     propertyCardEl.classList.add("featured_listing_card");
+    propertyCardEl.setAttribute("data-id",property_id);
     propertyCardEl.innerHTML = `
       <div class="card-image-container">
         <img src="${property_image}" alt="image description">
