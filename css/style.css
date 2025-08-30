@@ -758,8 +758,12 @@ i{
   }
 
   .cards .card .card_description .street{
-  font-size:14px;
-}
+    font-size:14px;
+  }
+
+  .section-header h2{
+    text-align:center;
+  }
 }
 
 /* Desktop */
