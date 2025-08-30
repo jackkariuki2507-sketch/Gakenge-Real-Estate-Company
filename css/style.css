@@ -107,7 +107,7 @@ i{
   top:0;
   left:0;
   right:0;
-  background-color:rgba(26, 26, 26, 1);
+  background-color:rgba(0,0,0,0.7);
   height:100%;
   width:100%;
   z-index:var(--min-z-index);
@@ -194,6 +194,10 @@ i{
 .js-main{
   background-color:var(--white-bg-color);
   height:400px;
+}
+
+.js-main section:nth-child(odd){
+  background-color:var(--section-even-bg-color);
 }
 
 /* .js-main section{
