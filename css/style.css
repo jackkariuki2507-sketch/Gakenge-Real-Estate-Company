@@ -196,6 +196,11 @@ i{
   height:400px;
 }
 
+/* .js-main section{
+    padding-top:var(--container-padding);
+    padding-bottom:var(--container-padding);
+} */
+
 /* Featured Listings */
 .card_description .card-title-price-container,
 .card_description .card-features{
@@ -692,6 +697,16 @@ i{
   .cards .card .card_description .street{
     font-size:12px;
   }
+
+  .section_projects_features .container{
+    padding-top:var(--container-padding);
+    padding-bottom:var(--container-padding);
+  }
+
+  .js-main section{
+    padding-top:var(--container-padding);
+    padding-bottom:var(--container-padding);
+  }
 }
 
 /* Tablet devices */
@@ -764,6 +779,12 @@ i{
   .section-header h2{
     text-align:center;
   }
+
+  .js-main section{
+    --container-padding:16px;
+    padding-top:var(--container-padding);
+    padding-bottom:var(--container-padding);
+  }
 }
 
 /* Desktop */
@@ -808,8 +829,15 @@ i{
     max-width:var(--container-max-width);
   }
 
+
   .section_projects_features .cards{
     --grid-template-cols:repeat(4,1fr);
     grid-template-columns: var(--grid-template-cols);
+  }
+
+  .js-main section{
+    --container-padding:24px;
+    padding-top:var(--container-padding);
+    padding-bottom:var(--container-padding);
   }
 }
