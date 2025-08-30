@@ -34,10 +34,7 @@
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   /* Grid Columns */
-  --grid-cols-1:1fr;
-  --grid-cols-2:repeat(2,1fr);
-  --grid-cols-3:repeat(3,1fr);
-  --grid-cols-4:repeat(4,1fr);
+  --grid-template-cols:1fr;
 }
 
 /* Paragraph Styles */
@@ -58,26 +55,6 @@ img{
   display:grid;
   gap:var(--container-gap);
   padding:var(--container-padding);
-}
-
-/*One Column Grid*/
-.grid-cols-1{
-  grid-template-columns: 1fr;
-}
-
-/* Two Columns Grid */
-.grid-cols-2{
-  grid-template-columns: repeat(2,1fr);
-}
-
-/* Three Columns Grid */
-.grid-cols-3{
-  grid-template-columns:repeat(3,1fr);
-}
-
-/* Four Columns Grid */
-.grid-cols-4{
-  grid-template-columns:repeat(4,1fr);
 }
 
 /*Flex Container*/
@@ -151,6 +128,7 @@ img{
 
 /*Cards*/
 .card{
+  position:relative;
   border:1px solid #ccc;
   border-radius:8px;
   box-shadow:var(--box-shadow);
