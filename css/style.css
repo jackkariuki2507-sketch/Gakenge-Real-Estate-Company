@@ -35,14 +35,12 @@
   max-width:var(--container-max-width);
   margin:var(--content-center-margin);
   padding:var(--container-padding);
-  /* border:1px solid red; */
 }
 
 /* Mobile First Design */
 body{
   font-family:var(--heading-font-family);
   font-size:1rem;
-  /* padding-top:70px; */
   color:var(--dark-gray-color);
   line-height:1.5;
 }
@@ -120,7 +118,6 @@ i{
   left:0;
   right:0;
   width:100%;
-  /* background-color:var(--dark-gray-color); */
   background-color: var(--transparent-bg-color);
   height:70px;
   z-index:var(--max-z-index);
@@ -193,17 +190,11 @@ i{
 /* Main */
 .js-main{
   background-color:var(--white-bg-color);
-  /* height:400px; */
 }
 
 .js-main section:nth-child(even){
   background-color:var(--section-even-bg-color);
 }
-
-/* .js-main section{
-    padding-top:var(--container-padding);
-    padding-bottom:var(--container-padding);
-} */
 
 /* Featured Listings */
 .card_description .card-title-price-container,
@@ -237,12 +228,10 @@ i{
 /* Team Section */
 .team_member_card .card_description{
   align-items: center;
-  /* background-color:orange; */
 }
 
 .team_member_card .card_description .card-team-info{
   flex-direction:column;
-  /* align-self:center; */
 }
 
 .team_member_card .card_description .card-team-info .card-bio-info{
@@ -320,416 +309,6 @@ i{
   margin-right:12px;
   margin-left:12px;
 }
-/* Header */
-/* .js-main-header-home-page{
-  position:relative;
-  background-image:url("https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
-  width:100%;
-  height:100vh;
-  color:#fff;
-  z-index:800;
-} */
-
-/* Header Overlay */
-/* .js-main-header-home-page::after{
-  content:"";
-  background-color:rgba(26, 26, 26, 0.8);
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  height:100%;
-  width:100%;
-  z-index:-1;
-} */
-
-/* Logo Icon */
-/* .logo i{
-  font-size:20px;
-}
-
-.logo span{
-  font-size:18px;
-  letter-spacing:2px;
-} */
-
-/*Navigation Bar*/
-/* .js-navigation-container{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  z-index:9999;
-  background-color:#111;
-  color:#fff;
-  padding:16px 32px;
-  height:70px;
-}
-
-.js-navBar-createAcc-Container{
-  display:none;
-} */
-
-/* Navigation Bar Toggle Bar */
-/* .js-navBar-Toggle{
-  display:block;
-}
-
-.js-navBar-Toggle i{
-  font-size:24px;
-}
-
-.js-navBar-items li{
-  margin-right:16px;
-}
-
-.js-navBar-items li:last-child{
-  margin-right:0;
-} */
-
-/*Hero*/
-/* .js-hero-section{
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  height:100%;
-  z-index:500;
-  color:#fff;
-  padding:24px 16px;
-}
-
-.js-hero-description{
-  text-align: left;
-}
-
-.js-hero-description h1{
-  font-size:32px;
-}
-
-.js-hero-description p{
-  text-align:left;
-  font-size:18px;
-}
-
-.js-hero-cta-buttons{
-  margin-top:20px;
-  display:flex;
-  justify-content: space-between;
-}
-
-.js-hero-cta-buttons a{
-  font-size:16px;
-} */
-
-/* Main  */
-/* .js-main{
-   padding-top:24px; 
-} */
-
-/* /Featured Listings Section */
-/* .featured_listing_card{
-  padding:8px;
-}
-
-.card-image-container{
-  border:1px ridge gold;
-  border-radius:8px;
-  height:160px;
-  overflow:hidden;
-}
-
-.card-title-price-container h3{
-  font-size:18px;
-}
-
-.card-title-price-container p{
-  font-size:16px;
-  font-weight:600;
-}
-
-.card-location p{
-  font-weight:600;
-  color:#333;
-  font-size:14px;
-}
-
-.card-key-info{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap:4px;
-  margin-bottom:4px;
-}
-
-.card-key-info li{
-  font-size:12px;
-}
-
-.card_button_container a{
-  font-size:12px;
-}
-
-.card-location{
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
-
-.card-title-price-container,
-.card-location{
-  margin-bottom:8px;
-}
-
-.card-team-title,
-.card-client-title{
-  margin-bottom:8px;
-}
-
-.card-bio-info h4{
-  font-size:14px;
-  color:#4d4c4c;
-}
-
-.card-team-info p{
-  font-size:14px;
-  margin-bottom:4px;
-}
-
-.card-team-info p > span{
-  font-weight:bold;
-}
-
-.card-team-info p a{
-  color:rgb(42, 42, 230);
-} */
-
-/* Client Testimonials */
-/* .card-client-testimony{
-  font-size:14px;
-} */
-
-/* Reviews Styles */
-/* .client_reviews_container .card{
-  display:flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
-  padding:8px;
-  gap:8px;
-}
-
-.client_reviews_container .card img{
-  height:100%;
-  width:100%;
-  object-fit:fill;
-} */
-
-/* Talk to Agent Styles */
-/* #section_talk_to_agent_features{
-  padding:0;
-  margin:0;
-}
-
-#talk-to-agent-features{
-  gap:0;
-  padding:0;
-}
-
-.card-image-contain img {
-  height:100%;
-}
-
-.card-agent-form{
-  background-color:rgba(26, 26, 26, 0.8);
-  padding:24px 16px;
-}
-
-.card-agent-form h2{
-  margin-bottom:0;
-}
-
-.card-agent-form h2,
-.card-agent-form label{
-  color:#fff;
-}
-
-.card-agent-form .form{
-  padding-top:8px;
-}
-.card-agent-form label{
-  text-align:left;
-} */
-
-/*Real Estate Tips Section*/
-/* .tips_features_container{
-  max-width:400px;
-}
-
-.card-tip{
-  width:100%;
-  background-color:#fff;
-  border-bottom:1px solid #ccc;
-  padding:8px 4px;
-}
-
-.card-tip-header{
-  align-items:center;
-}
-
-.card-tip-header h3{
-  font-size:14px;
-  color:#1b1b1b;
-  margin-bottom:0;
-  padding-bottom:0;
-  text-align:center;
-}
-
-.card-tip-header button{
-  background-color:transparent;
-}
-
-.card-tip-header button i{
-  font-size:14px;
-}
-
-.card-tip-body{
-  padding:0 8px;
-  text-align:left;
-}
-
-.card-tip-body p{
-  color:#242424;
-  border-top:1px solid #ccc;
-  padding:8px 4px;
-}
-
-#team_members_container .card-image-container{
-  width:156px;
-  align-self:center;
-  justify-self:center;
-  margin-bottom:8px;
-} */
-
-/* Media Queries */
-/* Small Mobile Devices */
-/* @media only screen and (max-width:400px){
-  .card-image-container{
-    height:128px;
-  }
-}
-
-@media only screen and (min-width:768px){
-  .js-navBar-createAcc-Container{
-    display:block;
-  }
-
-  .js-navBar-Toggle{
-    display:none;
-  }
-
-  .device-container-center{
-    max-width:800px!important;
-  }
-
-  .js-hero-description{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-  }
-
-  .js-hero-description h1{
-    font-size:48px;
-  }
-
-  .js-hero-description p{
-    text-align:left;
-    font-size:24px;
-  }
-
-  .js-hero-cta-buttons a:not(:last-child) {
-    margin-right:24px;
-  }
-
-  .section_heading h2{
-    font-size:36px!important;
-  }
-
-  .card-title-price-container{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-  }
-
-  .card-title-price-container h3{
-    font-size:18px!important;
-    margin:0;
-  }
-
-  .card-title-price-container p{
-    font-size:16px;
-    margin:0;
-  }
-
-  .card-location{
-    flex-direction:row;
-    justify-content:space-between;
-  }
-
-  .card-location p{
-    font-size:14px;
-  }
-
-  .card-key-info{
-    gap:8px;
-  }
-
-  .card-key-info li{
-    font-size:12px;
-  }
-
-  .card_button_container a{
-    font-size:16px;
-    width:100%;
-  }
-
-  .card-image-container{
-    height:228px;
-  }
-  
-  #team_members_container{
-    grid-template-columns: repeat(3,1fr)!important;
-    text-align:center;
-  }
-
-  #team_members_container .card-image-container{
-    width:200px;
-  }
-}
-
-@media only screen and (min-width:992px){
-  #project_features_container{
-    grid-template-columns: repeat(4,1fr);
-  }
-
-  #client_reviews_container{
-    grid-template-columns: repeat(4,1fr);
-  }
-
-  #talk-to-agent-features{
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  #footer_container{
-    flex-direction:row;
-    justify-content:space-evenly;
-    align-items:center;
-  }
-} */
 
 /* Heading,Paragraphs, Links, Buttons, Icons Media Queries */
 /* Mobile Devices */
@@ -802,10 +381,6 @@ i{
     padding-top:var(--container-padding);
     padding-bottom:var(--container-padding);
   }
-
-  /* .section_projects_features .cards .card-image-container{
-    height:128px;
-  } */
 }
 
 /* Tablet devices */

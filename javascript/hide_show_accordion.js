@@ -3,12 +3,9 @@ const cardAccordionContainer = document.querySelector(".tips_features_container"
 function hide_show_accordion(event){
   const target = event.target;
   if(!target.classList.contains("js-toggle-button")) return;
-  // console.log(target);
   const targetParentSibling = target.parentElement.parentElement.nextElementSibling;
-  // console.log(targetParentSibling);
   const isHidden = targetParentSibling.classList.contains("hide-container");
   if(isHidden){
-    // target.style.display = "none";
     target.classList.remove("fa-plus");
     target.classList.add("fa-minus");
     targetParentSibling.classList.add("unhide-container");
