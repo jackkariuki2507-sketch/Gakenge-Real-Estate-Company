@@ -1,5 +1,3 @@
-const cardAccordionContainer = document.querySelector(".tips_features_container");
-
 function hide_show_accordion(event){
   const target = event.target;
   if(!target.classList.contains("js-toggle-button")) return;
@@ -18,4 +16,4 @@ function hide_show_accordion(event){
   }
 }
 
-cardAccordionContainer.addEventListener("click",hide_show_accordion);
+export default hide_show_accordion;
