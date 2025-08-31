@@ -953,4 +953,8 @@ i{
     padding-top:var(--container-padding);
     padding-bottom:var(--container-padding);
   }
+
+  .section_tips_features h3{
+    font-size:20px;
+  }
 }

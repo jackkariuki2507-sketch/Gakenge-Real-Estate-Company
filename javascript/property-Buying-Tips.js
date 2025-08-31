@@ -17,10 +17,10 @@ async function getPropertyBuyingTipsInformation(){
 async function displayPropertyBuyingTips(){
   const propertyBuyingTips = await getPropertyBuyingTipsInformation();
   const propertyBuyingTipsWrapper = document.querySelector(".tips_features_container");
-  console.log(propertyBuyingTips);
+  // console.log(propertyBuyingTips);
   propertyBuyingTips.forEach(function(propertyBuyingTip,index){
     let propertyBuyingTipCard = createPropertyBuyingTipsCard(propertyBuyingTip,index);
-    console.log(propertyBuyingTipCard);
+    // console.log(propertyBuyingTipCard);
     propertyBuyingTipsWrapper.append(propertyBuyingTipCard);
   });
 }
