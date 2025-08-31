@@ -1,7 +1,7 @@
 async function getPropertyBuyingTipsInformation(){
   try{
     //Resource URL
-    const resourceURL = "../javascript/property-Buying-TipsInformation.json";
+    const resourceURL = "../javascript/json/property-Buying-TipsInformation.json";
     const response = await fetch(resourceURL);
 
     if(!response.ok){

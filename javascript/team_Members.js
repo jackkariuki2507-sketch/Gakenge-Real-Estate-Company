@@ -1,7 +1,7 @@
 async function getTeamMembersDetails(){
   try{
     //Resource URL
-    const resourceURL = "../javascript/team_Members_Information.json";
+    const resourceURL = "../javascript/json/team_Members_Information.json";
     const response = await fetch(resourceURL);
 
     if(!response.ok){

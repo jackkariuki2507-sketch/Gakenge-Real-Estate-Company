@@ -1,7 +1,7 @@
 async function getPropertiesDetails(){
   try{
     // Resource Url
-    const urlLink = "../javascript/propertiesInformation.json";
+    const urlLink = "../javascript/json/propertiesInformation.json";
     const response = await fetch(urlLink);
 
     if(!response.ok){

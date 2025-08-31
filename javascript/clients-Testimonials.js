@@ -1,7 +1,7 @@
 async function getClientsTestimonialsInformation(){
   try{
     //Resource URL
-    const resourceURL = "../javascript/client-TestimonialsInformation.json";
+    const resourceURL = "../javascript/json/client-TestimonialsInformation.json";
     const response = await fetch(resourceURL);
 
     if(!response.ok){
