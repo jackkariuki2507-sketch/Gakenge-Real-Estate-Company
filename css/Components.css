@@ -196,6 +196,15 @@ img{
   height:156px;
 } 
 
+/*Display Styles*/
+.hide-container{
+  display:none;
+}
+
+.unhide-container{
+  display:block;
+} 
+
 /*Cards*/
 /* .card{
   border:1px solid #ccc;

@@ -1,0 +1,37 @@
+[
+  {
+    "property_buying_tip_id":1,
+    "property_buying_tip":"Get Pre-Approved for a Mortgage.",
+    "property_buying_tip_description":"Start your home search by understanding your budget.Getting pre-approved shows sellers you're a serious buyer and can speed up the process."
+  },
+  {
+    "property_buying_tip_id":2,
+    "property_buying_tip":"Know Your Needs vs. Wants.",
+    "property_buying_tip_description":"List must-haves (like number of bedrooms or location) and nice-to-haves (like a pool or fireplace) to stay focused during your search."
+  },
+  {
+    "property_buying_tip_id":3,
+    "property_buying_tip":"Research the Neighborhood.",
+    "property_buying_tip_description":"Look into school districts, crime rates, walkability, public transport, and future developments — location is everything."
+  },
+  {
+    "property_buying_tip_id":4,
+    "property_buying_tip":"Work with a Trusted Real Estate Agent",
+    "property_buying_tip_description":"A knowledgeable agent will guide you, negotiate on your behalf, and help you avoid common pitfalls."
+  },
+  {
+    "property_buying_tip_id":5,
+    "property_buying_tip":"Don’t Skip the Home Inspection.",
+    "property_buying_tip_description":"Inspections reveal issues you might not notice and can help you renegotiate or even back out of a bad deal."
+  },
+  {
+    "property_buying_tip_id":6,
+    "property_buying_tip":"Budget for Hidden Costs.",
+    "property_buying_tip_description":" Include property taxes, closing costs, HOA fees, moving costs, maintenance, and insurance in your calculations."
+  },
+  {
+    "property_buying_tip_id":7,
+    "property_buying_tip":"Think Long-Term.",
+    "property_buying_tip_description":"Consider resale value, future needs, and the overall market trends in the area."
+  }
+]

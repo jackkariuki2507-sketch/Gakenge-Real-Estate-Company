@@ -278,6 +278,27 @@ i{
     display:none;
 }
 
+/* Property Buying Tips */
+.section_tips_features .cards .card-tip-header{
+  justify-content: space-between;
+  align-items:center;
+}
+
+.section_tips_features .cards .card-tip-body{
+  padding-left:var(--container-padding);
+  padding-right:var(--container-padding);
+}
+
+.section_tips_features .cards .js-toggle-button {
+  color:var(--black-color);
+}
+
+.section_tips_features .buying_tip_feature{
+  --div-margin-bottom:12px;
+  margin-bottom:var(--div-margin-bottom);
+}
+
+
 /* Header */
 /* .js-main-header-home-page{
   position:relative;
@@ -747,6 +768,14 @@ i{
     padding-bottom:var(--container-padding);
   }
 
+  .section_tips_features .buying_tip_feature .card-tip-body h3{
+    font-size:16px;
+  }
+
+  .section_tips_features .buying_tip_feature .card-tip-body p{
+    font-size:12px;
+  }
+
   /* .section_projects_features .cards .card-image-container{
     height:128px;
   } */
@@ -796,7 +825,8 @@ i{
   .section_projects_features .container,
   .section_team_members_features .container,
   .section_client_reviews_features .container,
-  .section_talk_to_agent_features .container{
+  .section_talk_to_agent_features .container,
+  .section_tips_features .container{
     --container-max-width:720px;
     max-width:var(--container-max-width);
   }

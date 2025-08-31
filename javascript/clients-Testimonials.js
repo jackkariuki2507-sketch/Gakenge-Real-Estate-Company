@@ -18,7 +18,7 @@ async function getClientsTestimonialsInformation(){
 async function displayClientsTestimonials(){
   const clientsTestimonials = await getClientsTestimonialsInformation();
   const clientReviewsWrapper = document.querySelector(".client_reviews_container");
-  console.log(clientsTestimonials);
+  
   clientsTestimonials.forEach(function(clientTestimony){
     const clientTestimonyCard = createClientTestimonyCard(clientTestimony);
     clientReviewsWrapper.append(clientTestimonyCard);
