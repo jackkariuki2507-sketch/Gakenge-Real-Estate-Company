@@ -258,7 +258,20 @@ i{
   margin-top:auto;
 }
 
+/* Client Reviews */
+.client_reviews_container .card-image-container{
+    height:60px;
+    width:60px;
+    --border-radius:50%;
+    border-radius:var(--border-radius);
+    overflow:hidden;
+}
 
+.client_reviews_container .card,
+.client_reviews_container .card_description{
+  flex-direction:column;
+  align-items:center;
+}
 
 /* Header */
 /* .js-main-header-home-page{
@@ -776,7 +789,8 @@ i{
   .js-hero .container,
   .js-navigation-bar .container,
   .section_projects_features .container,
-  .section_team_members_features .container{
+  .section_team_members_features .container,
+  .section_client_reviews_features .container{
     --container-max-width:720px;
     max-width:var(--container-max-width);
   }
@@ -790,7 +804,8 @@ i{
   }
 
   .section_projects_features .cards,
-  .section_team_members_features .cards{
+  .section_team_members_features .cards,
+  .section_client_reviews_features .cards{
     --grid-template-cols:repeat(2,1fr);
     grid-template-columns: var(--grid-template-cols);
   }
@@ -857,13 +872,15 @@ i{
   .js-hero .container,
   .js-navigation-bar .container,
   .section_projects_features .container,
-  .section_team_members_features .container{
+  .section_team_members_features .container,
+  .section_client_reviews_features .container{
     --container-max-width:1440px;
     max-width:var(--container-max-width);
   }
 
 
-  .section_projects_features .cards{
+  .section_projects_features .cards,
+  .section_client_reviews_features .cards{
     --grid-template-cols:repeat(4,1fr);
     grid-template-columns: var(--grid-template-cols);
   }

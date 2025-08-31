@@ -36,6 +36,9 @@
 
   /* Grid Columns */
   --grid-template-cols:1fr;
+
+  /* Border */
+  --border-radius:4px;
 }
 
 /* Paragraph Styles */
@@ -141,6 +144,12 @@ img{
 .section-header{
   --container-padding:2px;
   padding:var(--container-padding);
+}
+
+/* Star Ratings */
+.star-checked{
+  color:orange;
+  font-size:14px;
 }
 
 /*Cards*/

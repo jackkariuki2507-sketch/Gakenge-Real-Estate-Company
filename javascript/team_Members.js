@@ -1,5 +1,6 @@
 async function getTeamMembersDetails(){
   try{
+    //Resource URL
     const resourceURL = "../javascript/team_Members_Information.json";
     const response = await fetch(resourceURL);
 
@@ -8,7 +9,6 @@ async function getTeamMembersDetails(){
     }
 
     const responseData = await response.json();
-    // console.log(responseData);
     return responseData;
   }catch(error){
     console.error(error.message);
@@ -27,11 +27,12 @@ async function displayTeamMembersDetails(){
 
 
 function createTeamMemberCard(teamMember){
-  const {team_first_name,team_last_name,team_position,team_phone_number,team_email_address,team_image} = teamMember;
+  const {team_id,team_first_name,team_last_name,team_position,team_phone_number,team_email_address,team_image} = teamMember;
   const teamFullname = team_first_name + ' ' + team_last_name;
   const divCardEl = document.createElement("div");
   divCardEl.className = "card";
   divCardEl.classList.add("team_member_card");
+  divCardEl.setAttribute("data-id",team_id);
   divCardEl.innerHTML = `
     <div class="card-image-container">
       <img src="${team_image}" alt="${teamFullname}">
@@ -61,7 +62,6 @@ function createTeamMemberCard(teamMember){
       </div>
     </div>
   `;
-
   return divCardEl;
 }
 
