@@ -298,7 +298,11 @@ i{
   margin-bottom:var(--div-margin-bottom);
 }
 
-
+/* Footer */
+.js-footer{
+  background-color:var(--dark-gray-bg-color);
+  height:800px;
+}
 /* Header */
 /* .js-main-header-home-page{
   position:relative;
