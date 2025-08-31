@@ -1,0 +1,23 @@
+[
+  {
+    "team_first_name":"Leslie",
+    "team_last_name":"Knope",
+    "team_position":"Sales Agent",
+    "team_phone_number":"656 678 890",
+    "team_email_address":"leslie.doe@gakengerealestate.com.au"
+  },
+  {
+    "team_first_name":"Malcom",
+    "team_last_name":"Son",
+    "team_position":"Sales Agent",
+    "team_phone_number":"965 678 890",
+    "team_email_address":"malcom.son@gakengerealestate.com.au"
+  },
+  {
+    "team_first_name":"Claire",
+    "team_last_name":"Holt",
+    "team_position":"Sales Agent",
+    "team_phone_number":"456 678 890",
+    "team_email_address":"claire.holt@gakengerealestate.com.au"
+  }
+]

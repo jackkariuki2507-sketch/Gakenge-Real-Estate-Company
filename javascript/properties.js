@@ -20,6 +20,15 @@ async function displayPropertiesDetails(){
   const properties = await getPropertiesDetails();
   const propertyCardsWrapper = document.querySelector(".js-featured-listing-cards");
   properties.forEach(function(property){
+    let propertyDiv = createPropertyCard(property);
+    propertyCardsWrapper.append(propertyDiv);
+    // console.log(propertyCardEl);
+  });
+}
+
+displayPropertiesDetails();
+
+function createPropertyCard(property){
     const {property_id,property_name,property_price,property_address,property_features,property_image} = property;
     const propertyCardEl = document.createElement("div");
     propertyCardEl.className = "card";
@@ -66,31 +75,22 @@ async function displayPropertiesDetails(){
         </div>
       </div>
     `;
-    propertyCardsWrapper.append(propertyCardEl);
-    // console.log(propertyCardEl);
-  });
-}
 
-displayPropertiesDetails();
-
-// function createPropertyCard(property){
-//   const {property_id,property_name,property_price,property_address,property_features} = property;
-
+    return propertyCardEl;
   
-  
-//   // const propertyCard = document.createElement
-//   // propertyCardsWrapper.innerHTML = `
+  // const propertyCard = document.createElement
+  // propertyCardsWrapper.innerHTML = `
    
-//   // `;
+  // `;
 
-//   // console.log(propertyCardsWrapper);
+  // console.log(propertyCardsWrapper);
 
-//   // console.log(property_id);
-//   // console.log(property_name);
-//   // console.log(property_price);
-//   // console.log(property_address.location);
-//   // console.log(property_address.street);
-//   // console.log(`${property_features.bed} bed`);
-//   // console.log(`${property_features.bath} bath`);
-//   // console.log(`${property_features.garage} garage`);
-// }
+  // console.log(property_id);
+  // console.log(property_name);
+  // console.log(property_price);
+  // console.log(property_address.location);
+  // console.log(property_address.street);
+  // console.log(`${property_features.bed} bed`);
+  // console.log(`${property_features.bath} bath`);
+  // console.log(`${property_features.garage} garage`);
+}

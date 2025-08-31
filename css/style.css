@@ -107,7 +107,7 @@ i{
   top:0;
   left:0;
   right:0;
-  background-color:rgba(0,0,0,0.7);
+  background-color:rgba(0,0,0,0.8);
   height:100%;
   width:100%;
   z-index:var(--min-z-index);
@@ -196,7 +196,7 @@ i{
   height:400px;
 }
 
-.js-main section:nth-child(odd){
+.js-main section:nth-child(even){
   background-color:var(--section-even-bg-color);
 }
 
@@ -234,9 +234,24 @@ i{
   padding:var(--container-padding);
 }
 
-/* .cards .card .card_description div:nth-of-type(2){
-  background-color:orange;
-} */
+/* Team Section */
+.team_member_card .card_description{
+  align-items: center;
+  /* background-color:orange; */
+}
+
+.team_member_card .card_description .card-team-info{
+  flex-direction:column;
+  /* align-self:center; */
+}
+
+.team_member_card .card_description .card-team-info .card-bio-info{
+  text-align:center;
+}
+
+.team_member_card .card-image-container {
+  height:220px;
+}
 
 .cards .card .card_description .card_button_container{
   align-self:center;
