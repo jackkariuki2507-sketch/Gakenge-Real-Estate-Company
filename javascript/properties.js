@@ -26,8 +26,6 @@ async function displayPropertiesDetails(){
   });
 }
 
-displayPropertiesDetails();
-
 function createPropertyCard(property){
     const {property_id,property_name,property_price,property_address,property_features,property_image} = property;
     const propertyCardEl = document.createElement("div");
@@ -94,3 +92,5 @@ function createPropertyCard(property){
   // console.log(`${property_features.bath} bath`);
   // console.log(`${property_features.garage} garage`);
 }
+
+export default displayPropertiesDetails;
