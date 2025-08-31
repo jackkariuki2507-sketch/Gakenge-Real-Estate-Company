@@ -273,6 +273,11 @@ i{
   align-items:center;
 }
 
+/* Talk to Agent */
+.section_talk_to_agent_features .card-image-container{
+    display:none;
+}
+
 /* Header */
 /* .js-main-header-home-page{
   position:relative;
@@ -790,7 +795,8 @@ i{
   .js-navigation-bar .container,
   .section_projects_features .container,
   .section_team_members_features .container,
-  .section_client_reviews_features .container{
+  .section_client_reviews_features .container,
+  .section_talk_to_agent_features .container{
     --container-max-width:720px;
     max-width:var(--container-max-width);
   }
@@ -805,7 +811,8 @@ i{
 
   .section_projects_features .cards,
   .section_team_members_features .cards,
-  .section_client_reviews_features .cards{
+  .section_client_reviews_features .cards
+  {
     --grid-template-cols:repeat(2,1fr);
     grid-template-columns: var(--grid-template-cols);
   }
@@ -873,7 +880,9 @@ i{
   .js-navigation-bar .container,
   .section_projects_features .container,
   .section_team_members_features .container,
-  .section_client_reviews_features .container{
+  .section_client_reviews_features .container,
+  .section_talk_to_agent_features .container
+  {
     --container-max-width:1440px;
     max-width:var(--container-max-width);
   }
@@ -883,6 +892,20 @@ i{
   .section_client_reviews_features .cards{
     --grid-template-cols:repeat(4,1fr);
     grid-template-columns: var(--grid-template-cols);
+  }
+
+  .section_talk_to_agent_features .card-image-container{
+    display:none;
+  }
+
+  .section_talk_to_agent_features .cards{
+    --grid-template-cols:1fr;
+    grid-template-columns: var(--grid-template-cols);
+    justify-items:center;
+  }
+
+  .section_talk_to_agent_features .cards .card-agent-form{
+    width:600px;
   }
 
   .section_team_members_features .cards .card:first-child{
