@@ -19,7 +19,7 @@ async function displayTeamMembersDetails(){
   const teamMembers = await getTeamMembersDetails();
   const teamMembersWrapper = document.querySelector(".team_members_container");
 
-  teamMembers.forEach(function(teamMember){
+  teamMembers.forEach((teamMember) => {
     const teamMemberCard = createTeamMemberCard(teamMember);
     teamMembersWrapper.append(teamMemberCard);
   });

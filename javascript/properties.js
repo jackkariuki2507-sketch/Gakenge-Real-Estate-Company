@@ -17,7 +17,7 @@ async function getPropertiesDetails(){
 async function displayPropertiesDetails(){
   const properties = await getPropertiesDetails();
   const propertyCardsWrapper = document.querySelector(".js-featured-listing-cards");
-  properties.forEach(function(property){
+  properties.forEach((property) => {
     let propertyDiv = createPropertyCard(property);
     propertyCardsWrapper.append(propertyDiv);
   });

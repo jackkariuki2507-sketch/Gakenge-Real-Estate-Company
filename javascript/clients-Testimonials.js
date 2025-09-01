@@ -19,7 +19,7 @@ async function displayClientsTestimonials(){
   const clientsTestimonials = await getClientsTestimonialsInformation();
   const clientReviewsWrapper = document.querySelector(".client_reviews_container");
   
-  clientsTestimonials.forEach(function(clientTestimony){
+  clientsTestimonials.forEach((clientTestimony) => {
     const clientTestimonyCard = createClientTestimonyCard(clientTestimony);
     clientReviewsWrapper.append(clientTestimonyCard);
   });

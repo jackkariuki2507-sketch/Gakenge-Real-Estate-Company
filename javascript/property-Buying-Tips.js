@@ -18,7 +18,7 @@ async function displayPropertyBuyingTips(){
   const propertyBuyingTips = await getPropertyBuyingTipsInformation();
   const propertyBuyingTipsWrapper = document.querySelector(".tips_features_container");
  
-  propertyBuyingTips.forEach(function(propertyBuyingTip,index){
+  propertyBuyingTips.forEach((propertyBuyingTip,index) => {
     let propertyBuyingTipCard = createPropertyBuyingTipsCard(propertyBuyingTip,index);
     propertyBuyingTipsWrapper.append(propertyBuyingTipCard);
   });
