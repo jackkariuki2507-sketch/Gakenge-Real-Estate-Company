@@ -5,10 +5,14 @@ import displayTeamMembersDetails from '../javascript/team_Members.js';
 import displayClientsTestimonials from '../javascript/clients-Testimonials.js';
 import displayPropertyBuyingTips from '../javascript/property-Buying-Tips.js';
 import hide_show_accordion from '../javascript/hide_show_accordion.js';
+import getCurrentYear from '../javascript/current_Year.js';
 
 //Variables Declaration 
 const cardAccordionContainer = document.querySelector(".tips_features_container");
-
+const spanCurrentYear = document.querySelector(".js-current-year");
+spanCurrentYear.innerText = `
+  ${getCurrentYear()}
+`;
 
 //Event Listeners
 window.addEventListener("scroll",toggleNavbarBackground);
