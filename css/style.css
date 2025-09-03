@@ -30,6 +30,10 @@
 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Container Styles */
 .container{
   max-width:var(--container-max-width);
@@ -191,6 +195,10 @@ i{
 .js-main{
   background-color:var(--white-bg-color);
 }
+
+/* .js-main section{
+  height:100vh;
+} */
 
 .js-main section:nth-child(even){
   background-color:var(--section-even-bg-color);
