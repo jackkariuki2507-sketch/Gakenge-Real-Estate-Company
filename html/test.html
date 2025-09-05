@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Section with Container > Cards Layout</title>
+<style>
+  /* Reset */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Full viewport section */
+  section {
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;      /* center container vertically */
+    justify-content: center;  /* center container horizontally */
+    padding: 2rem;
+  }
+
+  /* Container fills section */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;           /* fill vertical space of section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertically center cards if needed */
+  }
+
+  /* Cards grid */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;            /* fill container vertically */
+    overflow-y: auto;        /* scroll if too many cards */
+    padding-right: 0.5rem;   /* padding for scrollbar space */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  /* Individual cards */
+  .card {
+    background-color: #e3e3e3;
+    padding: 1rem;
+    border-radius: 6px;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    user-select: none;
+  }
+
+</style>
+</head>
+<body>
+
+<section>
+  <div class="container">
+    <div>
+      <h1>Heading 1</h1>
+    </div>
+    <div class="cards">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+      <div class="card">Card 5</div>
+      <div class="card">Card 6</div>
+      <div class="card">Card 7</div>
+      <div class="card">Card 8</div>
+      <div class="card">Card 9</div>
+      <div class="card">Card 10</div>
+      <div class="card">Card 11</div>
+      <div class="card">Card 12</div>
+      <div class="card">Card 13</div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

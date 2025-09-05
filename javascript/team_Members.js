@@ -52,10 +52,14 @@ function createTeamMemberCard(teamMember){
         </div>
         <div class="card-contact-info">
           <p>
-            <span>Phone:</span> +61 ${team_phone_number}.
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span> +61 ${team_phone_number}.
           </p>
           <p>
-            <span>Email:</span> 
+            <span>
+              <i class="fa-solid fa-envelope"></i>
+            </span> 
             <a href="mailto:${team_email_address}">${team_email_address}</a>
           </p>
         </div>

@@ -1,6 +1,6 @@
 export function toggleNavbarBackground(){
   let navBarEl = document.querySelector(".js-navigation-bar");
-    if(window.scrollY > 0){
+    if(window.scrollY >= 70){
       navBarEl.classList.add("coloredNavBar");
       // navBarEl.style.backgroundColor = "#333";
       // navBarEl.classList.remove("transparentNavBar");

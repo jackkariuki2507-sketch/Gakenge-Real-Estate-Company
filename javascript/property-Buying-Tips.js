@@ -19,7 +19,7 @@ async function displayPropertyBuyingTips(){
   const propertyBuyingTipsWrapper = document.querySelector(".tips_features_container");
  
   propertyBuyingTips.forEach((propertyBuyingTip,index) => {
-    let propertyBuyingTipCard = createPropertyBuyingTipsCard(propertyBuyingTip,index);
+    const propertyBuyingTipCard = createPropertyBuyingTipsCard(propertyBuyingTip,index);
     propertyBuyingTipsWrapper.append(propertyBuyingTipCard);
   });
 }

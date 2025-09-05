@@ -8,6 +8,7 @@
   </title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/Components.css">
+  <link rel="stylesheet" href="../css/media-Queries.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body class="js-body">
@@ -122,14 +123,14 @@
   <!--Talk to Agent Section-->
   <section id="section_talk_to_agent" class="section_talk_to_agent_features section-scroll-margin-top">
     <div class="container">
-      <div class="section-header">
-        <h2>
-            Talk to an Agent
-        </h2>
-      </div>
-
-      <div id="talk-to-agent-features" class="cards talk-to-agent-features grid_container">
+     
+      <div id="talk-to-agent-features" class="cards talk-to-agent-features">
         <div class="card-agent-form">
+          <div class="section-header">
+            <h2>
+                Talk to an Agent
+            </h2>
+          </div>
           <div class="card-agent-body">
             <form class="form">
               <div class="form-control">
@@ -147,7 +148,7 @@
               <div class="form-control">
                 <label for="serviceType">What kind of Service are you after?</label>
                 <select name="type_of_service" id="serviceType">
-                  <option selected disabled>Service Type</option>
+                  <option selected disabled>--Service Type--</option>
                   <option value="selling property">Sell Your Property</option>
                   <option value="purchasing propery">Purchase a Property</option>
                   <option value="general enquiries">General Enquiries</option>
@@ -214,13 +215,13 @@
           <div class="js-contacts-description">
             <p>
               <span>
-                Phone:
+                <i class="fa-solid fa-phone"></i>
               </span> 
               (+61) 432 678 000
             </p>
             <p>
               <span>
-                Email:
+                <i class="fa-solid fa-envelope"></i>
               </span>
               <a href="mailto:gakengerealestate.com.au@outlook.com">gakengerealestate.com.au@outlook.com</a>
             </p>
