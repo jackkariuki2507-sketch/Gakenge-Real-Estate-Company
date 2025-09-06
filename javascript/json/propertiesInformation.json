@@ -59,4 +59,68 @@
     },
     "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
   }
+  ,
+  {
+    "property_id":5,
+    "property_name":"Duplex",
+    "property_price":700000,
+    "property_address":{
+      "location":"Boronia Heights",
+      "street":"66 Samantha Street"
+    },
+    "property_features":{
+      "bed":3,
+      "bath":1,
+      "garage":1
+    },
+    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+  }
+  ,
+  {
+    "property_id":6,
+    "property_name":"Duplex",
+    "property_price":700000,
+    "property_address":{
+      "location":"Boronia Heights",
+      "street":"66 Samantha Street"
+    },
+    "property_features":{
+      "bed":3,
+      "bath":1,
+      "garage":1
+    },
+    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+  }
+  ,
+  {
+    "property_id":7,
+    "property_name":"Duplex",
+    "property_price":700000,
+    "property_address":{
+      "location":"Boronia Heights",
+      "street":"66 Samantha Street"
+    },
+    "property_features":{
+      "bed":3,
+      "bath":1,
+      "garage":1
+    },
+    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+  }
+  ,
+  {
+    "property_id":8,
+    "property_name":"Duplex",
+    "property_price":700000,
+    "property_address":{
+      "location":"Boronia Heights",
+      "street":"66 Samantha Street"
+    },
+    "property_features":{
+      "bed":3,
+      "bath":1,
+      "garage":1
+    },
+    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+  }
 ]

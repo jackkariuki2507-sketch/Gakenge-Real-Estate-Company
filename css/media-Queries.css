@@ -42,8 +42,6 @@
     font-size:12px;
   }
 
-  /* /Repetition -DRY */
-
   .section_projects_features .container{
     padding-top:var(--container-padding);
     padding-bottom:var(--container-padding);
@@ -61,6 +59,7 @@
     --container-padding:16px;
     padding-top:var(--container-padding);
     padding-bottom:var(--container-padding);
+    /* border:5px solid red; */
   }
 
   .js-main .section_talk_to_agent_features .talk-to-agent-features{
@@ -86,15 +85,7 @@
     font-size:18px;
   }
 
-  p{
-    font-size:16px;
-  }
-
-  a{
-    font-size:16px;
-  }
-
-  i{
+  p,a,i{
     font-size:16px;
   }
 
@@ -120,11 +111,6 @@
     display:none;
   }
 
-  .section_team_members_features .cards .card:first-child{
-    grid-column: 1/span 3;
-    justify-self: center;
-  }
-
   .section_projects_features .cards .card-image-container{
     height:184px;
   }
@@ -145,11 +131,15 @@
   .js-footer .container{
     --grid-template-cols:repeat(auto-fit,minmax(250px,1fr));
     grid-template-columns:var(--grid-template-cols);
-    justify-content: flex-start;
+    justify-items:center;
+    gap:4px;
+    padding:0;
+    /* border:5px solid red; */
   }
 
   .js-footer .container .js-copyright{
     grid-column:1/span 3;
+    text-align:center;
   }
 
   .js-footer .container .js-copyright .js-current-year{
@@ -164,7 +154,6 @@
   .js-footer .container a{
     font-size:14px;
   }
-
 }
 
 /* Desktop */
@@ -220,12 +209,12 @@
     width:600px;
   }
 
-  .section_team_members_features .cards .card:first-child{
-    grid-column: 1;
-    justify-self: normal;
-  }
   .section_tips_features h3{
     font-size:20px;
+  }
+
+  .section_tips_features .container{
+    max-width:600px;
   }
 }
 
@@ -235,5 +224,3 @@
     max-width:var(--container-max-width);
   }
 }
-
-/* Try to look into the team section layout */
