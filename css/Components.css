@@ -48,6 +48,11 @@ p{
   margin-bottom:var(--paragraph-margin-bottom);
 }
 
+/* Span Styles */
+span{
+  display:inline-block;
+}
+
 /* Images Styles */
 img{
   width:100%;

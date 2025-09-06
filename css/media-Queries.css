@@ -85,6 +85,11 @@
     display:none;
   }
 
+  /* /Footer */
+  .js-footer{
+    height:200px;
+  }
+
 }
 
 /* Desktop */

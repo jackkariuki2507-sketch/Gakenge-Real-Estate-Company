@@ -192,14 +192,58 @@ i{
 
 /* Main */
 .js-main{
+  position:relative;
   background-color:var(--white-bg-color);
 }
 
-.js-main .cards .card {
-  
-}
 
 /* Featured Listings */
+.js-main .cards .featured-listing-card .card-image-container{
+  height:160px;
+}
+
+.js-main .cards .featured-listing-card .card-description,
+.js-main .cards .featured-listing-card .card-description .card-location-features{
+  flex-direction:column;
+  gap:0;
+  padding-left:0;
+  padding-right:0;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-title-price-container{
+  align-items:center;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-title-price-container,
+.js-main .cards .featured-listing-card .card-description .card-location-features{
+  justify-content:space-between;
+  padding:0;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-location-features{
+  align-items:flex-start;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-title-price-container .property-price{
+  font-weight:600;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-location-features .card-key-info{
+  width:100%;
+  justify-content: space-between;
+  align-items:center;
+  padding-left:0;
+  padding-right:0;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-location-features p{
+  color:var(--dark-gray-color);
+}
+
+.js-main .cards .featured-listing-card .card-description .card-button-container{
+  align-self: center;
+  margin-top:6px;
+}
 
 
 /* Team Section */
@@ -210,4 +254,12 @@ i{
 /* Property Buying Tips */
 
 /* Footer */
+.js-footer{
+  position:relative;
+  bottom:0;
+  background-color:var(--dark-gray-bg-color);
+}
 
+.js-footer *{
+  color:#fff;
+}

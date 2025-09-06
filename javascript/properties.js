@@ -42,7 +42,7 @@ function createPropertyCard(property){
             $${property_price}
           </p>
         </div>
-        <div class="card-features flex-container">
+        <div class="card-location-features flex-container">
           <div class="card-address">
             <p class="location">
               ${property_address.location}
@@ -53,13 +53,22 @@ function createPropertyCard(property){
           </div>
           <ul class="card-key-info flex-container">
             <li class="key-info">
-              ${property_features.bed} <i class="fa-solid fa-bed"></i>
+              <span>
+                ${property_features.bed}
+              </span>
+              <i class="fa-solid fa-bed"></i>
             </li>
             <li class="key-info">
-              ${property_features.bath} <i class="fa-solid fa-bath"></i>
+              <span>
+                ${property_features.bath}
+              <span>
+              <i class="fa-solid fa-bath"></i>
             </li>
             <li class="key-info">
-              ${property_features.garage} <i class="fa-solid fa-car"></i>
+              <span>
+                ${property_features.garage}
+              <span>
+              <i class="fa-solid fa-car"></i>
             </li>
           </ul>
         </div>
