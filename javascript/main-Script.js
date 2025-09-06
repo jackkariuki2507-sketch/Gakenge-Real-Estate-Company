@@ -8,7 +8,7 @@ import hide_show_accordion from '../javascript/hide_show_accordion.js';
 import getCurrentYear from '../javascript/current_Year.js';
 
 //Variables Declaration 
-const cardAccordionContainer = document.querySelector(".tips_features_container");
+const cardAccordionContainer = document.querySelector(".tips-features-container");
 const spanCurrentYear = document.querySelector(".js-current-year");
 spanCurrentYear.innerText = `
   ${getCurrentYear()}

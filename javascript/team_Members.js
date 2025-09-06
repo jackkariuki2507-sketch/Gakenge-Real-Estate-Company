@@ -17,7 +17,7 @@ async function getTeamMembersDetails(){
 
 async function displayTeamMembersDetails(){
   const teamMembers = await getTeamMembersDetails();
-  const teamMembersWrapper = document.querySelector(".team_members_container");
+  const teamMembersWrapper = document.querySelector(".team-members-container");
 
   teamMembers.forEach((teamMember) => {
     const teamMemberCard = createTeamMemberCard(teamMember);
@@ -31,13 +31,13 @@ function createTeamMemberCard(teamMember){
   const teamFullname = team_first_name + ' ' + team_last_name;
   const divCardEl = document.createElement("div");
   divCardEl.className = "card";
-  divCardEl.classList.add("team_member_card");
+  divCardEl.classList.add("team-member-card");
   divCardEl.setAttribute("data-id",team_id);
   divCardEl.innerHTML = `
     <div class="card-image-container">
       <img src="${team_image}" alt="${teamFullname}">
     </div>
-    <div class="card_description flex-container">
+    <div class="card-description flex-container">
       <div class="card-team-member-container">
         <h3>
           ${teamFullname}

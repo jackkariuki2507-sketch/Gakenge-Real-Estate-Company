@@ -38,33 +38,7 @@
     font-size:14px;
   }
 
-  .cards .card .card_description .street{
-    font-size:12px;
-  }
-
-  .section_projects_features .container{
-    padding-top:var(--container-padding);
-    padding-bottom:var(--container-padding);
-  }
-
-  .section_tips_features .buying_tip_feature .card-tip-body h3{
-    font-size:16px;
-  }
-
-  .section_tips_features .buying_tip_feature .card-tip-body p{
-    font-size:12px;
-  }
-
-  .js-footer .container{
-    --container-padding:16px;
-    padding-top:var(--container-padding);
-    padding-bottom:var(--container-padding);
-    /* border:5px solid red; */
-  }
-
-  .js-main .section_talk_to_agent_features .talk-to-agent-features{
-    min-width:320px;
-  }
+  
 }
 
 /* Tablet devices */
@@ -111,49 +85,6 @@
     display:none;
   }
 
-  .section_projects_features .cards .card-image-container{
-    height:184px;
-  }
-
-  .cards .card .card_description .street{
-    font-size:14px;
-  }
-
-  .section-header h2{
-    text-align:center;
-  }
-
-  .section_team_members_features .card-contact-info p,
-  .section_team_members_features .card-contact-info a{
-    font-size:initial;
-  }
-
-  .js-footer .container{
-    --grid-template-cols:repeat(auto-fit,minmax(250px,1fr));
-    grid-template-columns:var(--grid-template-cols);
-    justify-items:center;
-    gap:4px;
-    padding:0;
-    /* border:5px solid red; */
-  }
-
-  .js-footer .container .js-copyright{
-    grid-column:1/span 3;
-    text-align:center;
-  }
-
-  .js-footer .container .js-copyright .js-current-year{
-    display:inline-block;
-  }
-
-  .js-footer .container h4{
-    font-size:16px;
-  }
-
-  .js-footer .container p,
-  .js-footer .container a{
-    font-size:14px;
-  }
 }
 
 /* Desktop */
@@ -197,25 +128,6 @@
     max-width:var(--container-max-width);
   }
 
-  .section_talk_to_agent_features .card-image-container{
-    display:none;
-  }
-
-  .section_talk_to_agent_features .cards{
-    justify-items:center;
-  }
-
-  .section_talk_to_agent_features .cards .card-agent-form{
-    width:600px;
-  }
-
-  .section_tips_features h3{
-    font-size:20px;
-  }
-
-  .section_tips_features .container{
-    max-width:600px;
-  }
 }
 
 @media only screen and (min-width:1201px){

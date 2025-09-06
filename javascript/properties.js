@@ -27,13 +27,13 @@ function createPropertyCard(property){
     const {property_id,property_name,property_price,property_address,property_features,property_image} = property;
     const propertyCardEl = document.createElement("div");
     propertyCardEl.className = "card";
-    propertyCardEl.classList.add("featured_listing_card");
+    propertyCardEl.classList.add("featured-listing-card");
     propertyCardEl.setAttribute("data-id",property_id);
     propertyCardEl.innerHTML = `
       <div class="card-image-container">
-        <img src="${property_image}" alt="image description">
+        <img src="${property_image}" alt="image description"${property_name}>
       </div>
-      <div class="card_description flex-container">
+      <div class="card-description flex-container">
         <div class="card-title-price-container flex-container">
           <h3>
             ${property_name}
@@ -63,7 +63,7 @@ function createPropertyCard(property){
             </li>
           </ul>
         </div>
-        <div class="card_button_container">
+        <div class="card-button-container">
           <a href="" class="button button-tertiary">
             View More
           </a>

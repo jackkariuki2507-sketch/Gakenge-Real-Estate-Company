@@ -16,7 +16,7 @@ async function getPropertyBuyingTipsInformation(){
 
 async function displayPropertyBuyingTips(){
   const propertyBuyingTips = await getPropertyBuyingTipsInformation();
-  const propertyBuyingTipsWrapper = document.querySelector(".tips_features_container");
+  const propertyBuyingTipsWrapper = document.querySelector(".tips-features-container");
  
   propertyBuyingTips.forEach((propertyBuyingTip,index) => {
     const propertyBuyingTipCard = createPropertyBuyingTipsCard(propertyBuyingTip,index);
@@ -28,7 +28,7 @@ function createPropertyBuyingTipsCard(propertyBuyingTip,index){
   const {property_buying_tip_id,property_buying_tip,property_buying_tip_description} = propertyBuyingTip;
   const divCardEl = document.createElement("div");
   divCardEl.className = "card";
-  divCardEl.classList.add("buying_tip_feature");
+  divCardEl.classList.add("buying-tip-feature");
   divCardEl.setAttribute("data-id",property_buying_tip_id);
   divCardEl.innerHTML = `
     <div class="card-tip-header flex-container">

@@ -17,7 +17,7 @@ async function getClientsTestimonialsInformation(){
 
 async function displayClientsTestimonials(){
   const clientsTestimonials = await getClientsTestimonialsInformation();
-  const clientReviewsWrapper = document.querySelector(".client_reviews_container");
+  const clientReviewsWrapper = document.querySelector(".client-reviews-container");
   
   clientsTestimonials.forEach((clientTestimony) => {
     const clientTestimonyCard = createClientTestimonyCard(clientTestimony);
@@ -36,11 +36,11 @@ function createClientTestimonyCard(clientTestimony){
       <div class="card-image-container">
         <img src="${client_review_image}" alt="${client_Fullname}">
       </div>
-      <div class="card_description flex-container">
+      <div class="card-description flex-container">
         <h3 class="card-client-title">
           ${client_Fullname}
         </h3>
-        <div class="star_rating">
+        <div class="star-rating">
           <i class="fa-solid fa-star star-checked"></i>
           <i class="fa-solid fa-star star-checked"></i>
           <i class="fa-solid fa-star star-checked"></i>
