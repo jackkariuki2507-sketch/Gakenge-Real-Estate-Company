@@ -10,9 +10,9 @@ import getCurrentYear from '../javascript/current_Year.js';
 //Variables Declaration 
 const cardAccordionContainer = document.querySelector(".tips-features-container");
 const spanCurrentYear = document.querySelector(".js-current-year");
-spanCurrentYear.innerText = `
-  ${getCurrentYear()}
-`;
+// spanCurrentYear.innerText = `
+//   ${getCurrentYear()}
+// `;
 
 //Event Listeners
 window.addEventListener("scroll",toggleNavbarBackground);

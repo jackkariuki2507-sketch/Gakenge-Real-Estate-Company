@@ -30,6 +30,8 @@
 
 html{
   scroll-behavior: smooth;
+  line-height:1.5;
+  font-size:100%;
 }
 
 /* Container Styles */
@@ -42,9 +44,7 @@ html{
 /* Mobile First Design */
 body{
   font-family:var(--heading-font-family);
-  font-size:1rem;
   color:var(--dark-gray-color);
-  line-height:1.5;
 }
 
 /* Headings */
@@ -193,25 +193,17 @@ i{
 /* Main */
 .js-main{
   position:relative;
+  height:auto;
   background-color:var(--white-bg-color);
 }
 
-
 /* Featured Listings */
-.js-main .cards .featured-listing-card .card-image-container{
-  height:160px;
-}
-
 .js-main .cards .featured-listing-card .card-description,
 .js-main .cards .featured-listing-card .card-description .card-location-features{
   flex-direction:column;
   gap:0;
   padding-left:0;
   padding-right:0;
-}
-
-.js-main .cards .featured-listing-card .card-description .card-title-price-container{
-  align-items:center;
 }
 
 .js-main .cards .featured-listing-card .card-description .card-title-price-container,
@@ -255,8 +247,8 @@ i{
 
 /* Footer */
 .js-footer{
-  position:relative;
-  bottom:0;
+  /* position:relative;
+  bottom:0; */
   background-color:var(--dark-gray-bg-color);
 }
 

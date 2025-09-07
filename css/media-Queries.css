@@ -38,7 +38,25 @@
     font-size:14px;
   }
 
-  
+
+  /* New Updates */
+  .grid-container{
+    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+  }
+
+  .js-main .cards .featured-listing-card .card-image-container{
+    height:120px;
+  }
+
+  .js-main .cards .featured-listing-card .card-description .card-title-price-container{
+    flex-direction:column;
+    align-items:center;
+    gap:0;
+  }
+
+  .js-main .cards .featured-listing-card .card-description .card-title-price-container .property-price{
+    align-self:flex-start;
+  }
 }
 
 /* Tablet devices */
@@ -90,6 +108,18 @@
     height:200px;
   }
 
+  /* New Updates */
+  .js-main .cards .featured-listing-card .card-image-container{
+    height:160px;
+  }
+
+  .grid-container{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  }
+
+   .js-main .cards .featured-listing-card .card-description .card-title-price-container{
+      align-items:center;
+    }
 }
 
 /* Desktop */
