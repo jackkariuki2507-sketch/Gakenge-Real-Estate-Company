@@ -62,65 +62,65 @@
   ,
   {
     "property_id":5,
-    "property_name":"Duplex",
-    "property_price":700000,
+    "property_name":"Oceanfront",
+    "property_price":5550000,
     "property_address":{
-      "location":"Boronia Heights",
-      "street":"66 Samantha Street"
+      "location":"Gold Coast",
+      "street":"Streeton PI Street"
     },
     "property_features":{
-      "bed":3,
-      "bath":1,
-      "garage":1
+      "bed":5,
+      "bath":4,
+      "garage":3
     },
-    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+    "property_image":"https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg"
   }
   ,
   {
     "property_id":6,
-    "property_name":"Duplex",
-    "property_price":700000,
+    "property_name":"Studio",
+    "property_price":350000,
     "property_address":{
-      "location":"Boronia Heights",
-      "street":"66 Samantha Street"
+      "location":"Hamilton",
+      "street":"21 Arcade Street"
     },
     "property_features":{
-      "bed":3,
+      "bed":1,
       "bath":1,
       "garage":1
     },
-    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+    "property_image":"https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg"
   }
   ,
   {
     "property_id":7,
-    "property_name":"Duplex",
-    "property_price":700000,
+    "property_name":"Apartment",
+    "property_price":850000,
     "property_address":{
-      "location":"Boronia Heights",
-      "street":"66 Samantha Street"
+      "location":"Cannon Hill",
+      "street":"2 Queens Street"
     },
     "property_features":{
-      "bed":3,
-      "bath":1,
+      "bed":2,
+      "bath":2,
       "garage":1
     },
-    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+    "property_image":"https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg"
   }
   ,
   {
     "property_id":8,
-    "property_name":"Duplex",
-    "property_price":700000,
+    "property_name":"Cottage",
+    "property_price":2700000,
     "property_address":{
-      "location":"Boronia Heights",
-      "street":"66 Samantha Street"
+      "location":"Sunnybank",
+      "street":"McCullough Street"
     },
     "property_features":{
-      "bed":3,
-      "bath":1,
+      "bed":2,
+      "bath":2,
       "garage":1
     },
-    "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
+    "property_image":"https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg"
   }
 ]
