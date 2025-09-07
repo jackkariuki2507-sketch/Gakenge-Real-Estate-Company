@@ -70,6 +70,12 @@ function createPropertyCard(property){
               <span>
               <i class="fa-solid fa-car"></i>
             </li>
+             <li class="key-info">
+              <span>
+                ${property_features.size}
+              <span>
+              <i class="fas fa-expand"></i>
+            </li>
           </ul>
         </div>
         <div class="card-button-container">

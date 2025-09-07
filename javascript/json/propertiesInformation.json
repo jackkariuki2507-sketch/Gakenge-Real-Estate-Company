@@ -10,7 +10,8 @@
     "property_features":{
       "bed":3,
       "bath":2,
-      "garage":2
+      "garage":2,
+      "size":"950 sq ft"
     },
     "property_image":"https://plus.unsplash.com/premium_photo-1661908377130-772731de98f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvdXNlfGVufDB8fDB8fHww"
   },
@@ -25,13 +26,14 @@
     "property_features":{
       "bed":4,
       "bath":2,
-      "garage":2
+      "garage":2,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "property_id":3,
-    "property_name":"Town House",
+    "property_name":"Town",
     "property_price":1200000,
     "property_address":{
       "location":"Calamvale",
@@ -40,7 +42,8 @@
     "property_features":{
       "bed":4,
       "bath":2,
-      "garage":2
+      "garage":2,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8fDA%3D"
   },
@@ -55,7 +58,8 @@
     "property_features":{
       "bed":3,
       "bath":1,
-      "garage":1
+      "garage":1,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fGhvdXNlfGVufDB8fDB8fHww"
   }
@@ -71,7 +75,8 @@
     "property_features":{
       "bed":5,
       "bath":4,
-      "garage":3
+      "garage":3,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg"
   }
@@ -87,7 +92,8 @@
     "property_features":{
       "bed":1,
       "bath":1,
-      "garage":1
+      "garage":1,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg"
   }
@@ -103,7 +109,8 @@
     "property_features":{
       "bed":2,
       "bath":2,
-      "garage":1
+      "garage":1,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.pexels.com/photos/87223/pexels-photo-87223.jpeg"
   }
@@ -119,7 +126,8 @@
     "property_features":{
       "bed":2,
       "bath":2,
-      "garage":1
+      "garage":1,
+      "size":"950 sq ft"
     },
     "property_image":"https://images.pexels.com/photos/206172/pexels-photo-206172.jpeg"
   }
