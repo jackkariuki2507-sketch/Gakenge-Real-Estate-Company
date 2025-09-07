@@ -24,8 +24,8 @@
   --section-even-bg-color:#f8f9fa;
 
   /*Paddings*/
-  --container-gap:16px;
-  --container-padding:8px;
+  --container-gap:1em;
+  --container-padding:0.5em;
 
   /* Margins */
   --div-margin-bottom:8px;
@@ -141,17 +141,19 @@ img{
 
 /*Cards*/
 .card{
+  font-size:1rem;
   flex-direction:column;
   border:1px solid #ccc;
-  border-radius:8px;
+  border-radius:1em;
   box-shadow:var(--box-shadow);
-  padding:8px;
+  padding:0.5em;
   background-color:var(--white-color);
 }
 
 /* Section Header Container */
 .section-header{
-  --container-padding:2px;
+  font-size:1rem;
+  --container-padding:0.5em;
   padding:var(--container-padding);
 }
 
@@ -167,24 +169,25 @@ img{
 
 /*Forms*/
 .form{
+  font-size:1rem;
   width:100%;
-  padding:8px 0;
+  padding:0.5em 0;
 }
 
-.form label{
+.form label{ 
   display:block;
-  margin-bottom:8px;
+  font-size:0.8rem;
+  margin-bottom:0.5em;
   font-weight:600;
-  font-size:14px;
 }
 
 .form .form-control{
-  margin-bottom:14px;
+  margin-bottom:0.5em;
 }
 
 .form input::placeholder,
 .form textarea::placeholder{
-  font-size:14px;
+  font-size:0.8rem;
   color:var(--black-color);
 }
 

@@ -35,7 +35,7 @@ function createPropertyCard(property){
       </div>
       <div class="card-description flex-container">
         <div class="card-title-price-container flex-container">
-          <h3>
+          <h3 class="property-title">
             ${property_name}
           </h3>
           <p class="property-price">

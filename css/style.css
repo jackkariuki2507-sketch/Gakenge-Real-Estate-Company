@@ -220,8 +220,22 @@ i{
   align-items:flex-start;
 }
 
+.card-title-price-container .property-title{
+  font-size:1.2rem;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-location-features .location{
+  font-size:0.95rem;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-location-features .street{
+  font-size:0.85rem;
+}
+
 .js-main .cards .featured-listing-card .card-description .card-title-price-container .property-price{
-  font-weight:600;
+  font-weight:500;
+  font-size:0.9rem;
+  color:var(--black-color);
 }
 
 .js-main .cards .featured-listing-card .card-description .card-location-features .card-key-info{
@@ -230,6 +244,12 @@ i{
   align-items:center;
   padding-left:0;
   padding-right:0;
+}
+
+.js-main .cards .featured-listing-card .card-description .card-location-features .card-key-info .key-info span,
+.js-main .cards .featured-listing-card .card-description .card-location-features .card-key-info .key-info i{
+  color:var(--black-color);
+  font-size:0.87rem;
 }
 
 .js-main .cards .featured-listing-card .card-description .card-location-features p{

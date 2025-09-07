@@ -33,7 +33,7 @@
   },
   {
     "property_id":3,
-    "property_name":"Town",
+    "property_name":"Town House",
     "property_price":1200000,
     "property_address":{
       "location":"Calamvale",
