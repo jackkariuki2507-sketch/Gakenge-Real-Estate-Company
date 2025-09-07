@@ -45,12 +45,16 @@ html{
 body{
   font-family:var(--heading-font-family);
   color:var(--dark-gray-color);
+
+  /* Updates */
+  background-color:#fff;
+  /* padding-top:72px; */
 }
 
 /* Headings */
 h1,h2,h3,h4,h5,h6{
   font-family:var(--heading-font-family);
-  line-height:var(--heading-line-height);
+  /* line-height:var(--heading-line-height); */
   margin-bottom:var(--heading-margin-bottom);
   color:var(--black-color);
 }
@@ -91,26 +95,6 @@ i{
 /* Header */
 .js-main-header{
   position:relative;
-  height:100vh;
-  width:100%;
-  background-image:url("https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg");
-  background-repeat: no-repeat;
-  background-position:center;
-  background-size:cover;
-  z-index:var(--med-z-index);
-}
-
-/* Overlay */
-.js-main-header::after{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  background-color:rgba(0,0,0,0.8);
-  height:100%;
-  width:100%;
-  z-index:var(--min-z-index);
 }
 
 /*Navigation Bar*/
@@ -120,9 +104,9 @@ i{
   left:0;
   right:0;
   width:100%;
-  background-color: var(--transparent-bg-color);
   height:70px;
   z-index:var(--max-z-index);
+  background-color: var(--transparent-bg-color);
   transition: background-color ease-in-out 0.5s;
 }
 
@@ -160,10 +144,37 @@ i{
   letter-spacing: 1.5px;
 }
 
+/* Main */
+.js-main{
+  position:relative;
+  height:auto;
+  background-color:var(--white-bg-color);
+}
+
 /* Hero */
 .js-hero{
   position:relative;
+  /* Update */
+  height:100vh;
+  background-color:#333;
+  background-image:url("https://images.pexels.com/photos/1546168/pexels-photo-1546168.jpeg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center top;
+  z-index:var(--med-z-index);
+}
+
+/* Update --  Overlay*/
+.js-hero::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  width:100%;
   height:100%;
+  background-color:rgba(0,0,0,0.8);
+  z-index:var(--min-z-index);
 }
 
 .js-hero .container{
@@ -188,13 +199,6 @@ i{
 
 .js-hero .js-hero-cta-buttons a:not(:last-child){
   margin-right:16px;
-}
-
-/* Main */
-.js-main{
-  position:relative;
-  height:auto;
-  background-color:var(--white-bg-color);
 }
 
 /* Featured Listings */
