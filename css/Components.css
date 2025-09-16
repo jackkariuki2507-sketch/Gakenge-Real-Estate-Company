@@ -12,7 +12,7 @@
   --white-color:#ffffff;
   --black-color:#111111;
   --dark-gray-color:#333333;
-  --light-gray-color:#e0e0e0;
+  --light-gray-color:#fafafa;
   --primary-button-color:#609911;
   --dark-green:#335504;
   --lime-green:#72AD21;
@@ -57,6 +57,7 @@ span{
 img{
   width:100%;
   height:100%;
+  object-fit:cover;
   object-position: center;
 }
 

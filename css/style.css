@@ -92,17 +92,6 @@ i{
   vertical-align:middle;
 }
 
-span{
-  display:inline-block;
-}
-
-img{
-  width:100%;
-  height:auto;
-  object-fit:cover;
-  object-position:center top;
-}
-
 /* Header */
 .js-main-header{
   position:fixed;
@@ -157,6 +146,10 @@ img{
   position:relative;
   height:auto;
   background-color:var(--white-bg-color);
+}
+
+.js-main section:nth-child(odd){
+  background-color:var(--light-gray-color);
 }
 
 /* Hero */
@@ -286,11 +279,18 @@ img{
   flex-direction:column;
 }
 
- .js-main .cards .team-member-card .card-image-container{
+.js-main .cards .team-member-card .card-image-container{
   border-radius:50%;
   overflow:hidden;
   border:2px groove orange;
- }
+}
+
+.js-main .cards .team-member-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
 
 .team-member-card .card-description{
   flex-direction:column;
