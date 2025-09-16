@@ -277,14 +277,20 @@ i{
   margin-top:6px;
 }
 
+/* About Us */
+.js-main .section-about-us .about-us-container{
+  display:grid;
+  gap:1em;
+  padding:1em 0.5em;
+}
 
 /* Team Section */
-.team-member-card{
+.js-main .team-member-card{
   display:flex;
   flex-direction:column;
 }
 
-.section-team-members-features .container .cards{
+.js-main .section-team-members-features .container .cards{
   display:grid;
   gap:1em;
   padding:1em 0.5em;
@@ -303,15 +309,15 @@ i{
   text-align:center;
 }
 
-.team-member-card .card-description{
+.js-main .team-member-card .card-description{
   flex-direction:column;
 }
 
-.card-contact-info span{
+.js-main .card-contact-info span{
   margin-right:0.25em;
 }
 
-.card-contact-info a{
+.js-main .card-contact-info a{
   display:inline-block;
 }
 

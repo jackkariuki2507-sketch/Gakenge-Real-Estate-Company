@@ -65,6 +65,11 @@
     gap:0.2em;
   }
 
+  /* About Us */
+  .about-us-container{
+    grid-template-columns: 1fr;
+  }
+
   /* Team member */
   .js-main .cards .team-member-card .card-image-container{
     width:120px;
@@ -150,6 +155,11 @@
 
   .section-team-members-features .container .cards{
     grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+  }
+
+  /* About Us */
+  .about-us-container{
+    grid-template-columns: fit-content(300px) auto;
   }
 
   /* Team member */
