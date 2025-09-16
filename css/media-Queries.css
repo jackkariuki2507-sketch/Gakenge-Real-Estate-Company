@@ -153,13 +153,21 @@
     max-width:992px;
   }
 
-  .section-team-members-features .container .cards{
+  .js-main .section-team-members-features .container .cards{
     grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
   }
 
   /* About Us */
-  .about-us-container{
+  .js-main .about-us-container{
     grid-template-columns: fit-content(300px) auto;
+  }
+
+  .js-main .about-us-choose-us{
+    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+  }
+
+  .js-main .about-us-choose-us h4{
+    font-size:1rem;
   }
 
   /* Team member */

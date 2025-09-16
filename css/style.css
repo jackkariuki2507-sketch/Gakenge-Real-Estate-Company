@@ -284,6 +284,13 @@ i{
   padding:1em 0.5em;
 }
 
+.js-main .about-us-choose-us{
+  display:grid;
+  gap:1em;
+  padding-top:0.5em;
+  text-align:center;
+}
+
 /* Team Section */
 .js-main .team-member-card{
   display:flex;
