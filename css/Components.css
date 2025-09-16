@@ -2,11 +2,11 @@
 :root{
   /* Heading Styles */
   --heading-line-height:1.4;
-  --heading-margin-bottom:4px;
+  --heading-margin-bottom:0.125em;
 
   /* Paragraph Styles */
   --paragraph-line-height:1.4;
-  --paragraph-margin-bottom:4px;
+  --paragraph-margin-bottom:0.25em;
 
   /* Colors */
   --white-color:#ffffff;

@@ -148,6 +148,11 @@ i{
   background-color:var(--white-bg-color);
 }
 
+.js-main section{
+  padding-top:1em;
+  padding-bottom:2em;
+}
+
 .js-main section:nth-child(odd){
   background-color:var(--light-gray-color);
 }
@@ -277,6 +282,12 @@ i{
 .team-member-card{
   display:flex;
   flex-direction:column;
+}
+
+.section-team-members-features .container .cards{
+  display:grid;
+  gap:1em;
+  padding:1em 0.5em;
 }
 
 .js-main .cards .team-member-card .card-image-container{
