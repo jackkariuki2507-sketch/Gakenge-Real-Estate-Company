@@ -63,7 +63,6 @@ img{
 /*Grid Container*/
 .grid-container{
   display:grid;
-  /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
   gap:var(--container-gap);
   padding:var(--container-padding);
 }

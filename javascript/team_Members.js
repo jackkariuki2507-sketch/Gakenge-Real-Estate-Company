@@ -42,9 +42,6 @@ function createTeamMemberCard(teamMember){
         <h3>
           ${teamFullname}
         </h3>
-      </div>
-      
-      <div class="card-team-info flex-container">
         <div class="card-bio-info">
           <h4>
             ${team_position}

@@ -44,6 +44,7 @@
     grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
   }
 
+   /* Featured Listings */
   .js-main .cards .featured-listing-card .card-image-container{
     height:120px;
   }
@@ -56,6 +57,11 @@
 
   .js-main .cards .featured-listing-card .card-description .card-title-price-container .property-price{
     align-self:flex-start;
+  }
+
+  .js-main .cards .featured-listing-card .card-description .card-key-info{
+    flex-wrap:wrap;
+    gap:0.2em;
   }
 }
 
@@ -90,10 +96,10 @@
     align-items:center;
   }
 
-  .container{
+  /* .container{
     --container-max-width:720px;
     max-width:var(--container-max-width);
-  }
+  } */
 
   .nav-link-items{
     display:flex;
@@ -114,12 +120,21 @@
   }
 
   .grid-container{
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(30%,1fr));
   }
 
-   .js-main .cards .featured-listing-card .card-description .card-title-price-container{
-      align-items:center;
-    }
+  .js-main .cards .featured-listing-card .card-description .card-title-price-container{
+    align-items:center;
+  }
+
+  /*Header Container*/
+  .js-main-header .container{
+    max-width:1200px;
+  }
+
+  .section-projects-features .container{
+    max-width:992px;
+  }
 }
 
 /* Desktop */
@@ -157,11 +172,11 @@
     padding:14px 24px;
   }
 
-  .container
+  /* .container
   {
     --container-max-width:1200px;
     max-width:var(--container-max-width);
-  }
+  } */
 
 }
 

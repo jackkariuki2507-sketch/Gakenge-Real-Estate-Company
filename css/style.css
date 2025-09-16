@@ -92,13 +92,12 @@ i{
   vertical-align:middle;
 }
 
-/* Header */
-.js-main-header{
-  position:relative;
+span{
+  display:inline-block;
 }
 
-/*Navigation Bar*/
-.js-navigation-bar{
+/* Header */
+.js-main-header{
   position:fixed;
   top:0;
   left:0;
@@ -110,13 +109,14 @@ i{
   transition: background-color ease-in-out 0.5s;
 }
 
-.js-navigation-bar .container{
+.js-main-header .container{
   justify-content:space-between;
   align-items:center;
   height:100%;
   padding:20px;
 }
 
+/*Navigation Bar*/
 .nav-link-items{
   display:none;
   color:var(--white-color);
@@ -135,6 +135,7 @@ i{
   color:var(--white-color);
 }
 
+/*Hamburger Toggle and Website Logo*/
 .js-navBar-Toggle i,
 .logo i{
     color:var(--white-color);
@@ -180,10 +181,15 @@ i{
 .js-hero .container{
   flex-direction:column;
   justify-content:center;
+  text-align:center;
   height:100%;
   --container-max-width:100%;
   max-width:var(--container-max-width);
   padding:20px;
+}
+
+.js-hero .container .js-hero-description p{
+  text-align:center;
 }
 
 .js-hero h1,
@@ -263,7 +269,14 @@ i{
 
 
 /* Team Section */
+.team-member-card{
+  display:flex;
+  flex-direction:column;
+}
 
+.team-member-card .card-description{
+  flex-direction:column;
+}
 /* Client Reviews */
 
 
