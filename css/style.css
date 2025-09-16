@@ -96,6 +96,13 @@ span{
   display:inline-block;
 }
 
+img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  object-position:center top;
+}
+
 /* Header */
 .js-main-header{
   position:fixed;
@@ -208,6 +215,11 @@ span{
 }
 
 /* Featured Listings */
+.js-main .cards .featured-listing-card .card-image-container img{
+  border-top-left-radius:1em;
+  border-top-right-radius:1em;
+}
+
 .js-main .cards .featured-listing-card .card-description,
 .js-main .cards .featured-listing-card .card-description .card-location-features{
   flex-direction:column;
@@ -274,9 +286,24 @@ span{
   flex-direction:column;
 }
 
+ .js-main .cards .team-member-card .card-image-container{
+  border-radius:50%;
+  overflow:hidden;
+  border:2px groove orange;
+ }
+
 .team-member-card .card-description{
   flex-direction:column;
 }
+
+.card-contact-info span{
+  margin-right:0.25em;
+}
+
+.card-contact-info a{
+  display:inline-block;
+}
+
 /* Client Reviews */
 
 

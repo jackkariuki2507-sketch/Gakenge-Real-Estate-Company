@@ -45,7 +45,8 @@
   }
 
    /* Featured Listings */
-  .js-main .cards .featured-listing-card .card-image-container{
+  .js-main .cards .featured-listing-card .card-image-container
+  {
     height:120px;
   }
 
@@ -62,6 +63,12 @@
   .js-main .cards .featured-listing-card .card-description .card-key-info{
     flex-wrap:wrap;
     gap:0.2em;
+  }
+
+  /* Team member */
+  .js-main .cards .team-member-card .card-image-container{
+    width:120px;
+    height:120px;
   }
 }
 
@@ -115,8 +122,9 @@
   }
 
   /* New Updates */
-  .js-main .cards .featured-listing-card .card-image-container{
-    height:160px;
+  .js-main .cards .featured-listing-card .card-image-container
+  {
+    height:120px;
   }
 
   .grid-container{
@@ -132,8 +140,20 @@
     max-width:1200px;
   }
 
-  .section-projects-features .container{
+  .js-main section .container:not(.js-hero .container){
     max-width:992px;
+  }
+
+  .section-team-members-features .container .cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    gap:1em;
+  }
+
+  /* Team member */
+  .js-main .cards .team-member-card .card-image-container{
+    width:120px;
+    height:120px;
   }
 }
 
