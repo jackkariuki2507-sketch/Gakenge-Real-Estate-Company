@@ -284,6 +284,15 @@ i{
   padding:0.5em;
 }
 
+.js-main .section-about-us .about-us-container .card-image-container{
+  border-radius:0.312em;
+}
+
+.js-main .section-about-us .about-us-container .card-image-container img{
+  border-radius:0.312em;
+  box-shadow:var(--box-shadow);
+}
+
 .js-main .about-us-choose-us{
   display:grid;
   gap:1em;
