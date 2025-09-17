@@ -326,6 +326,7 @@ i{
 
 .js-main .card-contact-info span{
   margin-right:0.25em;
+  display:block;
 }
 
 .js-main .card-contact-info a{
