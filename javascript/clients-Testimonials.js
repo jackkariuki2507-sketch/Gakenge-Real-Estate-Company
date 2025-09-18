@@ -5,7 +5,24 @@ async function getClientsTestimonialsInformation(){
     const response = await fetch(resourceURL);
 
     if(!response.ok){
-      throw new error(`The Error status is ${response.status} and message is ${response.statusText}`);
+      let responseStatus = response.status;
+      let responseMessage = '';
+
+      switch(responseStatus){
+        case 404:
+          responseMessage = 'Page could not be found';
+          break;
+        case 401:
+          responseMessage = 'Unauthorised access';
+          break;
+        case 500:
+          responseMessage = 'Server encountered a problem';
+          break;
+        default:
+          responseMessage = 'An error has occurred';
+          break;
+      }
+      throw new Error(`Error status is ${responseStatus} and message is ${responseMessage}`);
     }
 
     const responseData = await response.json();
