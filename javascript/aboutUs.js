@@ -1,15 +1,59 @@
-function createAboutUsCard(){
-  const div = document.createElement("div");
-  div.innerHTML = `
+async function getAboutUsInformation(){
+  try{
+    // let errors = null;
+    const resourceURL = "../javascript/json/aboutus-information.json";
+    const response = await fetch(resourceURL);
+    if(!response.ok){
+      let responseStatus = response.status;
+      let responseMessage = '';
+
+      switch(responseStatus){
+        case 404:
+          responseMessage = 'Page could not be found';
+          break;
+        case 401:
+          responseMessage = 'Unauthorised access';
+          break;
+        case 500:
+          responseMessage = 'Server encountered a problem';
+          break;
+        default:
+          responseMessage = 'An error has occurred';
+          break;
+      }
+      throw new Error(`Error status is ${responseStatus} and message is ${responseMessage}`);
+    }
+    const responseData = await response.json();
+    return responseData;
+
+  }catch(error){
+    setErrors(error.message);
+  }
+}
+
+async function displayAboutUsInfo(){
+  const aboutInformation = await getAboutUsInformation();
+  const aboutUsSectionWrapper = document.querySelector(".section-about-us .container");
+  const cardsWrapper = createAboutUsCardsWrapper();
+  aboutUsSectionWrapper.append(cardsWrapper);
+  console.log(aboutInformation);
+}
+export default displayAboutUsInfo;
+
+function createAboutUsCardsWrapper(){
+  // const aboutUsCard = document.querySelector(".about-us-container");
+  const aboutUsCardsWrapper = document.createElement("div");
+  aboutUsCardsWrapper.className = "about-us-container";
+  aboutUsCardsWrapper.classList.add("cards");
+  aboutUsCardsWrapper.id = "about-us-container";
+
+  aboutUsCardsWrapper.innerHTML = `
     <div class="card-image-container">
-      <img src="https://images.pexels.com/photos/323776/pexels-photo-323776.jpeg" alt="About Us Image"/>
+      <img src="" alt="About Us Image"/>
     </div>
     <div class="card-description">
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta hic, quam necessitatibus sapiente illum, iusto nulla officia 
-        perferendis enim vel a. Voluptatibus atque nihil alias, aliquid reiciendis earum ducimus, natus dolore, eaque iste voluptatem 
-        dolores mollitia sequi nobis veniam unde totam facere quis aut fuga magni nam et. Debitis in libero odio porro corporis numquam 
-        itaque totam, laudantium, sequi saepe dicta quod, perferendis dignissimos? Incidunt maiores hic corrupti facere, quos dicta
+        
       </p>
       <h3>
         Why Choose Us
@@ -33,6 +77,15 @@ function createAboutUsCard(){
       </div>
     </div>
   `;
+
+  return aboutUsCardsWrapper;
 }
 
-createAboutUsCard();
+// console.log(createAboutUsCardsWrapper());
+
+function setErrors(error){
+  const errorDivEl = document.createElement("div");
+  errorDivEl.className = "error-alert";
+  errorDivEl.append(document.createTextNode(error));
+  return errorDivEl;
+}
