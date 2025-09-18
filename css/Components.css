@@ -192,7 +192,6 @@ img{
 }
 
 .form input[type="text"],
-.form input[type="password"],
 .form input[type="email"],
 .form textarea,
 .form select{
@@ -207,6 +206,12 @@ img{
 .form textarea{
   height:156px;
 } 
+
+.form input[type="text"]:focus,
+.form textarea:focus,
+.form input[type="email"]:focus{
+  background-color:var(--light-gray-color);
+}
 
 /*Display Styles*/
 .hide-container{

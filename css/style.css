@@ -395,6 +395,11 @@ i{
   color:var(--black-color);
 }
 
+.tips-features-container .buying-tip-feature .card-tip-body{
+  padding-left:0.5em;
+  padding-right:0.5em;
+}
+
 /* Footer */
 .js-footer{
   /* position:relative;
