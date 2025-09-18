@@ -71,15 +71,23 @@
   }
 
   /* Team member */
-  .js-main .cards .team-member-card .card-image-container{
+  .js-main .cards .team-member-card .card-image-container,
+  .js-main .client-review-features .card-image-container{
     width:120px;
     height:120px;
   }
 
-  .section-team-members-features .container .cards{
+  .section-team-members-features .container .cards
+  {
     grid-template-columns: repeat(3,1fr);
     overflow-x:auto;
     /* width:100vw; */
+  }
+
+  /* /Client Testimonials */
+  .js-main .client-review-features{
+    grid-template-columns: repeat(4,1fr);
+    overflow-x:auto;
   }
 }
 
@@ -169,7 +177,8 @@
   }
 
   /* Team member */
-  .js-main .cards .team-member-card .card-image-container{
+  .js-main .cards .team-member-card .card-image-container,
+  .js-main .client-review-features .card-image-container{
     width:120px;
     height:120px;
   }

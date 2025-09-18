@@ -30,13 +30,13 @@ function createClientTestimonyCard(clientTestimony){
   let client_Fullname = client_review_firstname + ' ' + client_review_lastname;
   const divCardEl = document.createElement("div");
   divCardEl.className = "card";
-  divCardEl.classList.add("client-review-features","flex-container");
+  divCardEl.classList.add("client-review-features");
   divCardEl.setAttribute("data-id",client_review_id);
   divCardEl.innerHTML = `
       <div class="card-image-container">
         <img src="${client_review_image}" alt="${client_Fullname}">
       </div>
-      <div class="card-description flex-container">
+      <div class="card-description">
         <h3 class="card-client-title">
           ${client_Fullname}
         </h3>
