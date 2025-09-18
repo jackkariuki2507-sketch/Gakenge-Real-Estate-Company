@@ -346,7 +346,8 @@ i{
 /* Client Reviews */
 .js-main .client-reviews-container{
   display:grid;
-  gap:1em 0.5em;
+  gap:1em;
+  padding:1em 0.5em;
 }
 
 .js-main .client-review-features{
@@ -354,7 +355,7 @@ i{
   flex-direction:column;
 }
 
-.js-main .client-review-features .cards{
+.js-main .client-review-features .card-description{
   display:flex;
   flex-direction:column;
   align-items:center;
