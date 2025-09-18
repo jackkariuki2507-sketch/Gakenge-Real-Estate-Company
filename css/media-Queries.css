@@ -196,13 +196,22 @@
   }
 
   /* Client Testimonials */
+  .js-main .section-client-reviews-features .container .card{
+    min-width:250px;
+  }
+
   .js-main .section-client-reviews-features .container .cards{
     grid-template-columns: repeat(4,1fr);
+    overflow-x:auto;
   }
 
   .js-main .client-review-features .card-image-container{
     width:80px;
     height:80px;
+  }
+
+  .js-main .client-review-features .card-description h3{
+    font-size:1rem;
   }
 }
 
@@ -237,6 +246,7 @@
   .js-main .about-us-choose-us h4{
     font-size:1rem;
   }
+
   /* .container
   {
     --container-max-width:1200px;

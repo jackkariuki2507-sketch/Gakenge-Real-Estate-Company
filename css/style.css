@@ -363,6 +363,10 @@ i{
   padding:1em 0.5em;
 }
 
+.js-main .client-review-features .card-description h3{
+  text-align:center;
+}
+
 .js-main .client-review-features .card-image-container{
   align-self:center;
 }
