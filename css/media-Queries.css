@@ -153,10 +153,6 @@
     max-width:992px;
   }
 
-  .js-main .section-team-members-features .container .cards{
-    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
-  }
-
   /* About Us */
   .js-main .about-us-container{
     grid-template-columns: fit-content(300px) auto;
@@ -174,6 +170,10 @@
   .js-main .cards .team-member-card .card-image-container{
     width:120px;
     height:120px;
+  }
+
+  .js-main .section-team-members-features .container .cards{
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
   }
 }
 

@@ -102,7 +102,7 @@ i{
   height:70px;
   z-index:var(--max-z-index);
   background-color: var(--transparent-bg-color);
-  transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.2s;
 }
 
 .js-main-header .container{
