@@ -40,7 +40,7 @@
 
 
   /* New Updates */
-  .grid-container{
+  .js-featured-listing-cards{
     grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
   }
 
@@ -85,9 +85,10 @@
   }
 
   /* /Client Testimonials */
-  .js-main .client-review-features{
-    grid-template-columns: repeat(4,1fr);
-    overflow-x:auto;
+  .section-client-reviews-features .client-reviews-container{
+    grid-template-columns: repeat(3,1fr);
+    overflow-x:hidden;
+    width:100vw;
   }
 }
 
@@ -177,14 +178,24 @@
   }
 
   /* Team member */
-  .js-main .cards .team-member-card .card-image-container,
-  .js-main .client-review-features .card-image-container{
+  .js-main .cards .team-member-card .card-image-container
+  {
     width:120px;
     height:120px;
   }
 
   .js-main .section-team-members-features .container .cards{
     grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+  }
+
+  /* Client Testimonials */
+  .js-main .section-client-reviews-features .container .cards{
+    grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+  }
+
+  .js-main .client-review-features .card-image-container{
+    width:80px;
+    height:80px;
   }
 }
 
