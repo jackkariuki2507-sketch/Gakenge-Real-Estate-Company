@@ -214,6 +214,13 @@
   .tips-features-container .buying-tip-feature h3{
     font-size:1rem;
   }
+
+  /* Footer */
+  .js-footer .container .container-header{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1em;
+  }
 }
 
 /* Desktop */
