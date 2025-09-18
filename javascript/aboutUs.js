@@ -1,6 +1,5 @@
 async function getAboutUsInformation(){
   try{
-    // let errors = null;
     const resourceURL = "../javascript/json/aboutus-information.json";
     const response = await fetch(resourceURL);
     if(!response.ok){
@@ -34,14 +33,15 @@ async function getAboutUsInformation(){
 async function displayAboutUsInfo(){
   const aboutInformation = await getAboutUsInformation();
   const aboutUsSectionWrapper = document.querySelector(".section-about-us .container");
-  const cardsWrapper = createAboutUsCardsWrapper();
-  aboutUsSectionWrapper.append(cardsWrapper);
-  console.log(aboutInformation);
+  aboutInformation.forEach((about)=>{
+    const cardsWrapper = createAboutUsCardsWrapper(about);
+    aboutUsSectionWrapper.append(cardsWrapper);
+  });
 }
 export default displayAboutUsInfo;
 
-function createAboutUsCardsWrapper(){
-  // const aboutUsCard = document.querySelector(".about-us-container");
+function createAboutUsCardsWrapper(about){
+  const {id, about_us_image, about_us_description, about_us_features} = about;
   const aboutUsCardsWrapper = document.createElement("div");
   aboutUsCardsWrapper.className = "about-us-container";
   aboutUsCardsWrapper.classList.add("cards");
@@ -49,11 +49,11 @@ function createAboutUsCardsWrapper(){
 
   aboutUsCardsWrapper.innerHTML = `
     <div class="card-image-container">
-      <img src="" alt="About Us Image"/>
+      <img src="${about_us_image}" alt="About Us Image"/>
     </div>
     <div class="card-description">
       <p>
-        
+        ${about_us_description}
       </p>
       <h3>
         Why Choose Us
@@ -61,17 +61,17 @@ function createAboutUsCardsWrapper(){
       <div class="about-us-choose-us">
         <div class="card">
           <h4>
-            Local Expertise
+            ${about_us_features[0]}
           </h4>
         </div>
         <div class="card">
           <h4>
-            Verified Listings
+            ${about_us_features[1]}
           </h4>
         </div>
         <div class="card">
           <h4>
-            Personalized Service
+            ${about_us_features[2]}
           </h4>
         </div>
       </div>
@@ -80,8 +80,6 @@ function createAboutUsCardsWrapper(){
 
   return aboutUsCardsWrapper;
 }
-
-// console.log(createAboutUsCardsWrapper());
 
 function setErrors(error){
   const errorDivEl = document.createElement("div");
