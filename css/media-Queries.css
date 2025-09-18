@@ -85,10 +85,13 @@
   }
 
   /* /Client Testimonials */
+  .section-client-reviews-features .client-reviews-container .card{
+    min-width:250px;
+  }
   .section-client-reviews-features .client-reviews-container{
     grid-template-columns: repeat(3,1fr);
-    overflow-x:hidden;
-    width:100vw;
+    overflow-x:auto;
+    /* width:100vw; */
   }
 }
 
