@@ -372,6 +372,28 @@ i{
 }
 
 /* Property Buying Tips */
+.tips-features-container{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1em;
+  padding:1em 0.5em;
+  
+}
+
+.tips-features-container .buying-tip-feature{
+  border-radius:0.25em;
+}
+
+.tips-features-container .card-tip-header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.tips-features-container .buying-tip-feature i{
+  color:var(--black-color);
+}
 
 /* Footer */
 .js-footer{

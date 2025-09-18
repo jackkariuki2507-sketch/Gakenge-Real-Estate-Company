@@ -2,42 +2,33 @@
 /* Mobile Devices */
 @media only screen and (max-width:767px){
   h1{
-    font-size:24px;
+    font-size:1.5rem;
   }
 
   h2{
-    font-size:20px;
+    font-size:1.25px;
   }
 
   h3{
-    font-size:18px;
+    font-size:1.125rem;
   }
 
   h4{
-    font-size:16px;
+    font-size:1rem;
   }
 
-  p{
-    font-size:14px;
-  }
-
-  a{
-    font-size:14px;
+  p,a,i{
+    font-size:0.875rem;
   }
 
   .nav-link-items li a{
-    padding:12px 16px;
+    padding:0.857em  1.142em;
   }
 
   .button{
-    font-size:14px;
-    padding:10px 16px;
+    font-size:0.875rem;
+    padding:0.714em 1.142em;
   }
-
-  i{
-    font-size:14px;
-  }
-
 
   /* New Updates */
   .js-featured-listing-cards{
@@ -96,6 +87,11 @@
   .js-main .client-review-features .card-image-container{
     width:80px;
     height:80px;
+  }
+
+  /* Buying Tips */
+  .tips-features-container .buying-tip-feature h3{
+    font-size:1rem;
   }
 }
 
@@ -211,6 +207,11 @@
   }
 
   .js-main .client-review-features .card-description h3{
+    font-size:1rem;
+  }
+
+  /* Buying Tips */
+  .tips-features-container .buying-tip-feature h3{
     font-size:1rem;
   }
 }
