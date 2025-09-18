@@ -61,17 +61,17 @@ function createAboutUsCardsWrapper(about){
       <div class="about-us-choose-us">
         <div class="card">
           <h4>
-            ${about_us_features[0]}
+            ${about_us_features?.[0] ?? 'Feature 1'}
           </h4>
         </div>
         <div class="card">
           <h4>
-            ${about_us_features[1]}
+            ${about_us_features?.[1] ?? 'Feature 2'}
           </h4>
         </div>
         <div class="card">
           <h4>
-            ${about_us_features[2]}
+            ${about_us_features?.[2] ?? 'Feature 3'}
           </h4>
         </div>
       </div>
